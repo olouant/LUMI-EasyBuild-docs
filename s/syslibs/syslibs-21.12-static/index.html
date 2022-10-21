@@ -1,0 +1,1385 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for the LUMI EasyBuild-provided packages">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
+    
+    
+      
+        <title>syslibs/21.12-static (syslibs-21.12-static.eb) - syslibs - LUMI EasyBuild-provided software</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2d9f7617.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#syslibs2112-static-syslibs-2112-staticeb" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="LUMI EasyBuild-provided software" class="md-header__button md-logo" aria-label="LUMI EasyBuild-provided software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LUMI EasyBuild-provided software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              syslibs/21.12-static (syslibs-21.12-static.eb) - syslibs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent=""  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#a" class="md-tabs__link">
+      a
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#b" class="md-tabs__link">
+      b
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#c" class="md-tabs__link">
+      c
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#d" class="md-tabs__link">
+      d
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#e" class="md-tabs__link">
+      e
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#f" class="md-tabs__link">
+      f
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#g" class="md-tabs__link">
+      g
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#h" class="md-tabs__link">
+      h
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#i" class="md-tabs__link">
+      i
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#j" class="md-tabs__link">
+      j
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#l" class="md-tabs__link">
+      l
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#m" class="md-tabs__link">
+      m
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#n" class="md-tabs__link">
+      n
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#o" class="md-tabs__link">
+      o
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#p" class="md-tabs__link">
+      p
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#q" class="md-tabs__link">
+      q
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#r" class="md-tabs__link">
+      r
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#s" class="md-tabs__link">
+      s
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#t" class="md-tabs__link">
+      t
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#u" class="md-tabs__link">
+      u
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#v" class="md-tabs__link">
+      v
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#w" class="md-tabs__link">
+      w
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#x" class="md-tabs__link">
+      x
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#z" class="md-tabs__link">
+      z
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="LUMI EasyBuild-provided software" class="md-nav__button md-logo" aria-label="LUMI EasyBuild-provided software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    LUMI EasyBuild-provided software
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#a" class="md-nav__link">
+        a
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#b" class="md-nav__link">
+        b
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#c" class="md-nav__link">
+        c
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#d" class="md-nav__link">
+        d
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#e" class="md-nav__link">
+        e
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#f" class="md-nav__link">
+        f
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#g" class="md-nav__link">
+        g
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#h" class="md-nav__link">
+        h
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#i" class="md-nav__link">
+        i
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#j" class="md-nav__link">
+        j
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#l" class="md-nav__link">
+        l
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#m" class="md-nav__link">
+        m
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#n" class="md-nav__link">
+        n
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#o" class="md-nav__link">
+        o
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#p" class="md-nav__link">
+        p
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#q" class="md-nav__link">
+        q
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#r" class="md-nav__link">
+        r
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#s" class="md-nav__link">
+        s
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#t" class="md-nav__link">
+        t
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#u" class="md-nav__link">
+        u
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#v" class="md-nav__link">
+        v
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#w" class="md-nav__link">
+        w
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#x" class="md-nav__link">
+        x
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#z" class="md-nav__link">
+        z
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<p><a href="../">[syslibs]</a> <a href="../../..">[package list]</a></p>
+<h1 id="syslibs2112-static-syslibs-2112-staticeb">syslibs/21.12-static (syslibs-21.12-static.eb)</h1>
+<p>To access module help and find out for which stacks and partitions the module is
+installed, use <code>module spider syslibs/21.12-static</code>.</p>
+<p>EasyConfig:</p>
+<div class="highlight"><pre><span></span><code><span class="n">easyblock</span> <span class="o">=</span> <span class="s1">&#39;Bundle&#39;</span>
+
+<span class="n">name</span> <span class="o">=</span>          <span class="s1">&#39;syslibs&#39;</span>
+<span class="n">version</span> <span class="o">=</span>       <span class="s1">&#39;21.12&#39;</span>
+<span class="n">versionsuffix</span> <span class="o">=</span> <span class="s1">&#39;-static&#39;</span>
+
+<span class="kn">import</span> <span class="nn">os</span> <span class="k">as</span> <span class="nn">local_os</span>
+
+<span class="c1"># The first line below is a dirty trick not very much loved by the EasyBuild developers but</span>
+<span class="c1"># it helps to make this EasyConfig indpendent of the LUMI software stack version as there is</span>
+<span class="c1"># no other reference to that version in the file that we can use since it relies on the</span>
+<span class="c1"># SYSTEM toolchain.</span>
+<span class="n">local_LUMI_version</span> <span class="o">=</span> <span class="n">local_os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;LUMI_STACK_CPE_VERSION&#39;</span><span class="p">]</span>
+
+<span class="n">homepage</span> <span class="o">=</span> <span class="s1">&#39;(none)&#39;</span>
+
+<span class="c1"># We list all libraries in a whatis line so that they can be found by module keyword.</span>
+<span class="c1"># Contrary to what the LMOD documentation makes you believe, it seems that help is</span>
+<span class="c1"># not searched when using module keyword.</span>
+<span class="n">whatis</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;Description: A number of libraries that are mostly also on the system but as static libraries to be used as build dependencies.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Contains: ncurses/ncursesw, readline, bzip2, zlib, lz4, expat, APR/APR-util, file, PCRE2, SQLite3&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="n">local_syslibs_ncurses_version</span> <span class="o">=</span>      <span class="s1">&#39;6.2&#39;</span>           <span class="c1"># https://ftp.gnu.org/pub/gnu/ncurses/</span>
+<span class="n">local_syslibs_libreadline_version</span> <span class="o">=</span>  <span class="s1">&#39;8.1.2&#39;</span>         <span class="c1"># https://ftp.gnu.org/pub/gnu/readline/</span>
+<span class="n">local_syslibs_bzip2_version</span> <span class="o">=</span>        <span class="s1">&#39;1.0.8&#39;</span>         <span class="c1"># https://sourceware.org/git/?p=bzip2.git;a=summary</span>
+<span class="n">local_syslibs_zlib_version</span> <span class="o">=</span>         <span class="s1">&#39;1.2.11&#39;</span>        <span class="c1"># https://zlib.net/</span>
+<span class="n">local_syslibs_lz4_version</span> <span class="o">=</span>          <span class="s1">&#39;1.9.3&#39;</span>         <span class="c1"># https://github.com/lz4/lz4/releases</span>
+<span class="n">local_syslibs_expat_version</span> <span class="o">=</span>        <span class="s1">&#39;2.4.1&#39;</span>         <span class="c1"># https://github.com/libexpat/libexpat/releases</span>
+<span class="n">local_syslibs_APR_version</span> <span class="o">=</span>          <span class="s1">&#39;1.7.0&#39;</span>         <span class="c1"># https://apr.apache.org/</span>
+<span class="n">local_syslibs_APR_util_version</span> <span class="o">=</span>     <span class="s1">&#39;1.6.1&#39;</span>         <span class="c1"># https://apr.apache.org/</span>
+<span class="n">local_syslibs_file_version</span> <span class="o">=</span>         <span class="s1">&#39;5.41&#39;</span>          <span class="c1"># http://ftp.astron.com/pub/file/</span>
+<span class="n">local_syslibs_PCRE2_version</span> <span class="o">=</span>        <span class="s1">&#39;10.39&#39;</span>         <span class="c1"># https://github.com/PhilipHazel/pcre2/releases</span>
+<span class="n">local_syslibs_Serf_version</span> <span class="o">=</span>         <span class="s1">&#39;1.3.9&#39;</span>         <span class="c1"># https://serf.apache.org/download</span>
+<span class="n">local_syslibs_SQLite3_version</span> <span class="o">=</span>      <span class="s1">&#39;3.37.2&#39;</span>        <span class="c1"># https://www.sqlite.org/</span>
+<span class="n">local_SQLite3_filename_version</span> <span class="o">=</span>  <span class="s1">&#39;3370200&#39;</span>
+
+<span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">This module provides a number of libraries that are mostly also found on the</span>
+<span class="s2">system but as static libraries meant to be used as build dependencies for a</span>
+<span class="s2">number of tools that should not introduce dependencies when being used so that</span>
+<span class="s2">their impact on other software remains minimal.</span>
+
+<span class="s2">Contrary to previous versions of this module, the versions do no longer correspond</span>
+<span class="s2">to those in SUSE Linux. OFten very recent versions are provided. As they are meant</span>
+<span class="s2">for static linking, they won&#39;t interfer with system libraries anyways.</span>
+
+<span class="s2">Overview of included libraries:</span>
+
+<span class="s2">* Terminal I/O</span>
+<span class="s2">  + ncurses (version </span><span class="si">%(ncurses)s</span><span class="s2">): The Ncurses (new curses) library is a free software</span>
+<span class="s2">    emulation of curses in System V Release 4.0, and more. It uses Terminfo</span>
+<span class="s2">    format, supports pads and color and multiple highlights and forms characters</span>
+<span class="s2">    and function-key mapping, and has all the other SYSV-curses enhancements</span>
+<span class="s2">    over BSD Curses.</span>
+<span class="s2">    Documentation is available through man pages in sections 3, 5 and 7.</span>
+<span class="s2">  + libreadline (version </span><span class="si">%(libreadline)s</span><span class="s2">): The GNU Readline library provides a set of</span>
+<span class="s2">    functions for use by applications that allow users to edit command lines as</span>
+<span class="s2">    they are typed in. Both Emacs and vi editing modes are available.</span>
+<span class="s2">    The Readline library includes additional functions to maintain a list of</span>
+<span class="s2">    previously-entered command lines, to recall and perhaps reedit those lines,</span>
+<span class="s2">    and perform csh-like history expansion on previous commands.</span>
+<span class="s2">    There are manual pages for readline and history and help via info.</span>
+<span class="s2">* File compression tools and libraries</span>
+<span class="s2">  + bzip2 (version </span><span class="si">%(bzip2)s</span><span class="s2">): Patent-free high-quailty data compressor</span>
+<span class="s2">    with very good compression yet fast compression and decompression</span>
+<span class="s2">    (.bz2 files)</span>
+<span class="s2">  + zlib (version </span><span class="si">%(zlib)s</span><span class="s2">): Free lossless data compression library, not</span>
+<span class="s2">    covered by any patents, for the popular .gz files.</span>
+<span class="s2">  + lz4 (version </span><span class="si">%(lz4)s</span><span class="s2">): LZ4 is lossless compression algorithm, providing compression</span>
+<span class="s2">    speed at 400 MB/s per core. It features an extremely fast decoder, with</span>
+<span class="s2">    speed in multiple GB/s per core.</span>
+<span class="s2">* Networking, security and XML</span>
+<span class="s2">  + expat (version </span><span class="si">%(expat)s</span><span class="s2">): Expat is an XML parser library written in C.</span>
+<span class="s2">    It is a stream-oriented parser in which an application registers handlers</span>
+<span class="s2">    for things the parser might find in the XML document (like start tags).</span>
+<span class="s2">    It provides the command line tool xmlwf and static and shared libraries.</span>
+<span class="s2">* Miscellaneous</span>
+<span class="s2">  + APR (version </span><span class="si">%(APR)s</span><span class="s2">) and APR-util (version </span><span class="si">%(APR_util)s</span><span class="s2">): Apache Portable</span>
+<span class="s2">    Runtime and its util libraries.</span>
+
+<span class="s2">    The mission of the Apache Portable Runtime (APR) project is to create and</span>
+<span class="s2">    maintain software libraries that provide a predictable and consistent</span>
+<span class="s2">    interface to underlying platform-specific implementations. The primary goal</span>
+<span class="s2">    is to provide an API to which software developers may code and be assured</span>
+<span class="s2">    of predictable if not identical behaviour regardless of the platform on</span>
+<span class="s2">    which their software is built, relieving them of the need to code</span>
+<span class="s2">    special-case conditions to work around or take advantage of platform-specific</span>
+<span class="s2">    deficiencies or features.</span>
+<span class="s2">  + file (version </span><span class="si">%(filev)s</span><span class="s2">): The file command is &quot;a file type guesser&quot;, that</span>
+<span class="s2">    is, a command-line tool that tells you in words what kind of data a file</span>
+<span class="s2">    contains. Unlike most GUI systems, command-line UNIX systems - with this</span>
+<span class="s2">    program leading the charge - don&#39;t rely on filename extentions to tell you</span>
+<span class="s2">    the type of a file, but look at the file&#39;s actual contents. This is, of</span>
+<span class="s2">    course, more reliable, but requires a bit of I/O.This is a</span>
+<span class="s2">    re-implementation of the original file command shipped with Bell Labs UNIX.</span>
+<span class="s2">  + PCRE2 (version </span><span class="si">%(PCRE2)s</span><span class="s2">: More modern version of PCRE.</span>
+<span class="s2">    The package includes the command line tools pcre2grep, pcre2test and</span>
+<span class="s2">    pcre2-config, documented through man pages. API documentation is available</span>
+<span class="s2">    through man pcre2.</span>
+<span class="s2">  + Serf (version </span><span class="si">%(Serf)s</span><span class="s2">): The serf library is a high performance C-based HTTP client library</span>
+<span class="s2">    built upon the Apache Portable Runtime (APR) library.</span>
+
+<span class="s2">    Key features are:</span>
+<span class="s2">      * multiplexed, asynchronous connections</span>
+<span class="s2">      * SSL/TLS support</span>
+<span class="s2">      * full HTTP pipelining</span>
+<span class="s2">      * multiple authentication modes (Basic, Digest, Kerberos/NTLM)</span>
+<span class="s2">      * zero-copy support for increased throughput</span>
+
+<span class="s2">    Its main uses are in other Apache software such as subversion and Open</span>
+<span class="s2">    Office.</span>
+
+<span class="s2">    The Serf library is permissively licensed under the Apache License, v2.</span>
+<span class="s2">  + SQLite3 (version </span><span class="si">%(SQLite3)s</span><span class="s2">): SQLite is a C-language library that implements a small, fast, self-contained,</span>
+<span class="s2">    high-reliability, full-featured, SQL database engine. SQLite is the most used</span>
+<span class="s2">    database engine in the world. SQLite is built into all mobile phones and most</span>
+<span class="s2">    computers and comes bundled inside countless other applications that people</span>
+<span class="s2">    use every day. More Information...</span>
+
+<span class="s2">    The SQLite file format is stable, cross-platform, and backwards compatible and</span>
+<span class="s2">    the developers pledge to keep it that way through the year 2050. SQLite database</span>
+<span class="s2">    files are commonly used as containers to transfer rich content between systems</span>
+<span class="s2">    and as a long-term archival format for data. There are over 1 trillion (1e12)</span>
+<span class="s2">    SQLite databases in active use.</span>
+
+<span class="s2">    SQLite source code is in the public-domain and is free to everyone to use for</span>
+<span class="s2">    any purpose.</span>
+
+<span class="s2">    NOTE: This is not a full-featured build but serves to build svn</span>
+<span class="s2">&quot;&quot;&quot;</span> <span class="o">%</span> <span class="p">{</span>
+    <span class="s1">&#39;ncurses&#39;</span><span class="p">:</span>      <span class="n">local_syslibs_ncurses_version</span><span class="p">,</span>
+    <span class="s1">&#39;libreadline&#39;</span><span class="p">:</span>  <span class="n">local_syslibs_libreadline_version</span><span class="p">,</span>
+    <span class="s1">&#39;bzip2&#39;</span><span class="p">:</span>        <span class="n">local_syslibs_bzip2_version</span><span class="p">,</span>
+    <span class="s1">&#39;zlib&#39;</span><span class="p">:</span>         <span class="n">local_syslibs_zlib_version</span><span class="p">,</span>
+    <span class="s1">&#39;lz4&#39;</span><span class="p">:</span>          <span class="n">local_syslibs_lz4_version</span><span class="p">,</span>
+    <span class="s1">&#39;expat&#39;</span><span class="p">:</span>        <span class="n">local_syslibs_expat_version</span><span class="p">,</span>
+    <span class="s1">&#39;APR&#39;</span><span class="p">:</span>          <span class="n">local_syslibs_APR_version</span><span class="p">,</span>
+    <span class="s1">&#39;APR_util&#39;</span><span class="p">:</span>     <span class="n">local_syslibs_APR_util_version</span><span class="p">,</span>
+    <span class="s1">&#39;filev&#39;</span><span class="p">:</span>        <span class="n">local_syslibs_file_version</span><span class="p">,</span>
+    <span class="s1">&#39;PCRE2&#39;</span><span class="p">:</span>        <span class="n">local_syslibs_PCRE2_version</span><span class="p">,</span>
+    <span class="s1">&#39;Serf&#39;</span><span class="p">:</span>         <span class="n">local_syslibs_Serf_version</span><span class="p">,</span>
+    <span class="s1">&#39;SQLite3&#39;</span><span class="p">:</span>      <span class="n">local_syslibs_SQLite3_version</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">docurls</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;ncurses:       Web-based documentation on https://www.gnu.org/software/ncurses/&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;libreadline:   Web-based readline user interface documentation: https://tiswww.cwru.edu/php/chet/readline/rluserman.html&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;libreadline:   Web-based libreadline documentation: https://tiswww.cwru.edu/php/chet/readline/readline.html&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;libreadline:   Web-based libhistory documentation: https://tiswww.cwru.edu/php/chet/readline/history.html&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;bzip2:         Web-based documentation on http://www.bzip.org/docs.html&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;zlib:          Web-based manual on https://zlib.net/manual.html&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;lz4:           Manual page for the lz4 command in section 1&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;expat:         Web-based documentation: https://libexpat.github.io/doc/&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;expat:         Man page for xmlwf&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;file:          Home page is https://www.darwinsys.com/file/&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;PCRE2:         Web-based documentation: http://www.pcre.org/current/doc/html/&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;PCRE2:         Manual pages in section 1 (pcre2grep, pcre2test) and 3 (API, start with pcre2)&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;SQLite3:       Manual page for the sqlite3 command in section 1&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="n">local_syslibs_bzip2_major_minor</span> <span class="o">=</span> <span class="s1">&#39;.&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">local_syslibs_bzip2_version</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)[:</span><span class="mi">2</span><span class="p">])</span>
+
+<span class="n">toolchain</span> <span class="o">=</span> <span class="n">SYSTEM</span>
+
+<span class="n">builddependencies</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s1">&#39;buildtools&#39;</span><span class="p">,</span> <span class="n">local_LUMI_version</span><span class="p">),</span>   <span class="c1"># Needed for Serf, useful for the rest.</span>
+<span class="p">]</span>
+
+<span class="n">default_easyblock</span> <span class="o">=</span> <span class="s1">&#39;ConfigureMake&#39;</span>
+
+<span class="n">components</span> <span class="o">=</span> <span class="p">[</span>
+<span class="c1">#</span>
+<span class="c1"># Terminal libraries</span>
+<span class="c1">#</span>
+    <span class="p">(</span><span class="s1">&#39;ncurses&#39;</span><span class="p">,</span> <span class="n">local_syslibs_ncurses_version</span><span class="p">,</span> <span class="p">{</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span>       <span class="p">[</span> <span class="p">{</span>
+                            <span class="s1">&#39;filename&#39;</span><span class="p">:</span>    <span class="n">SOURCE_TAR_GZ</span><span class="p">,</span>
+                            <span class="s1">&#39;source_urls&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">GNU_SOURCE</span><span class="p">]</span>
+                         <span class="p">}</span> <span class="p">],</span>
+        <span class="s1">&#39;start_dir&#39;</span><span class="p">:</span>     <span class="s1">&#39;</span><span class="si">%(namelower)s</span><span class="s1">-</span><span class="si">%(version)s</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;preconfigopts&#39;</span><span class="p">:</span> <span class="s1">&#39;CFLAGS=&quot;-O2 -march=znver1 -fPIC&quot; CXXFLAGS=&quot;-O2 -march=znver1 -fPIC&quot; &#39;</span><span class="p">,</span>
+        <span class="s1">&#39;configopts&#39;</span><span class="p">:</span>    <span class="s1">&#39;--without-shared --with-normal --with-termlib --with-ticlib  --enable-overwrite&#39;</span> <span class="o">+</span>
+                         <span class="s1">&#39;--without-ada --enable-symlinks --with-versioned-syms &#39;</span> <span class="o">+</span>
+                         <span class="s1">&#39;--enable-pc-files --with-pkg-config-libdir=</span><span class="si">%(installdir)s</span><span class="s1">/lib/pkgconfig &#39;</span><span class="p">,</span> <span class="c1"># First build: default build.</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;ncurses&#39;</span><span class="p">,</span> <span class="n">local_syslibs_ncurses_version</span><span class="p">,</span> <span class="p">{</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span>       <span class="p">[</span> <span class="p">{</span>
+                            <span class="s1">&#39;filename&#39;</span><span class="p">:</span>    <span class="n">SOURCE_TAR_GZ</span><span class="p">,</span>
+                            <span class="s1">&#39;source_urls&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">GNU_SOURCE</span><span class="p">]</span>
+                         <span class="p">}</span> <span class="p">],</span>
+        <span class="s1">&#39;start_dir&#39;</span><span class="p">:</span>     <span class="s1">&#39;</span><span class="si">%(namelower)s</span><span class="s1">-</span><span class="si">%(version)s</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;preconfigopts&#39;</span><span class="p">:</span> <span class="s1">&#39;make distclean &amp;&amp; CFLAGS=&quot;-O2 -march=znver1 -fPIC&quot; CXXFLAGS=&quot;-O2 -march=znver1 -fPIC&quot; &#39;</span><span class="p">,</span>
+        <span class="s1">&#39;configopts&#39;</span><span class="p">:</span>    <span class="s1">&#39;--without-shared --with-normal --with-termlib --with-ticlib --enable-overwrite &#39;</span> <span class="o">+</span>
+                         <span class="s1">&#39;--without-ada --enable-symlinks --with-versioned-syms &#39;</span> <span class="o">+</span>
+                         <span class="s1">&#39;--enable-pc-files --with-pkg-config-libdir=</span><span class="si">%(installdir)s</span><span class="s1">/lib/pkgconfig &#39;</span> <span class="o">+</span>
+                         <span class="s1">&#39;--enable-ext-colors --enable-widec --includedir=</span><span class="si">%(installdir)s</span><span class="s1">/include/ncursesw/&#39;</span><span class="p">,</span> <span class="c1"># Second build: the UTF-8 enabled version (ncursesw)</span>
+        <span class="s1">&#39;installopts&#39;</span><span class="p">:</span>   <span class="s1">&#39; &amp;&amp; cd </span><span class="si">%(installdir)s</span><span class="s1"> &amp;&amp; /bin/rm -rf bin lib/*.so*&#39;</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libreadline&#39;</span><span class="p">,</span> <span class="n">local_syslibs_libreadline_version</span><span class="p">,</span> <span class="p">{</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span>       <span class="p">[</span> <span class="p">{</span>
+                            <span class="s1">&#39;filename&#39;</span><span class="p">:</span>    <span class="s1">&#39;readline-</span><span class="si">%(version)s</span><span class="s1">.tar.gz&#39;</span><span class="p">,</span>
+                            <span class="s1">&#39;source_urls&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;http://ftp.gnu.org/gnu/readline&#39;</span><span class="p">]</span>
+                         <span class="p">}],</span>
+        <span class="s1">&#39;start_dir&#39;</span><span class="p">:</span>     <span class="s1">&#39;readline-</span><span class="si">%(version)s</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;preconfigopts&#39;</span><span class="p">:</span> <span class="s2">&quot;LD_LIBRARY_PATH=</span><span class="si">%(installdir)s</span><span class="s2">/lib:$LD_LIBRARY_PATH LDFLAGS=&#39;-L</span><span class="si">%(installdir)s</span><span class="s2">/lib -lncurses&#39; &quot;</span> <span class="o">+</span>
+                         <span class="s2">&quot;CFLAGS=&#39;-O2 -march=znver1 -fPIC&#39; CXXFLAGS=&#39;-O2 -march=znver1 -fPIC&#39; &quot;</span><span class="p">,</span>
+        <span class="s1">&#39;configopts&#39;</span><span class="p">:</span>    <span class="s1">&#39;--enable-static --disable-shared&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;buildopts&#39;</span><span class="p">:</span>     <span class="s2">&quot;SHLIB_LIBS=&#39;-lncurses&#39;&quot;</span><span class="p">,</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;bzip2&#39;</span><span class="p">,</span> <span class="n">local_syslibs_bzip2_version</span><span class="p">,</span> <span class="p">{</span>
+        <span class="s1">&#39;easyblock&#39;</span><span class="p">:</span>   <span class="s1">&#39;ConfigureMake&#39;</span><span class="p">,</span>
+        <span class="c1"># The bzip2 EasyBlock does not work in a bundle since there is a problem with with_shared_libs</span>
+        <span class="c1"># https://sourceforge.net/projects/bzip2/files/bzip2-1.0.6.tar.gz/download</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span>     <span class="p">[</span> <span class="p">{</span>
+                          <span class="s1">&#39;filename&#39;</span><span class="p">:</span>    <span class="n">SOURCE_TAR_GZ</span><span class="p">,</span>
+                          <span class="s1">&#39;source_urls&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;https://sourceware.org/pub/</span><span class="si">%(name)s</span><span class="s1">/&#39;</span><span class="p">]</span>
+                       <span class="p">}</span> <span class="p">],</span>
+        <span class="s1">&#39;patches&#39;</span><span class="p">:</span>     <span class="p">[</span><span class="s1">&#39;bzip2-</span><span class="si">%(version)s</span><span class="s1">-pkgconfig.patch&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;start_dir&#39;</span><span class="p">:</span>   <span class="s1">&#39;</span><span class="si">%(namelower)s</span><span class="s1">-</span><span class="si">%(version)s</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;skipsteps&#39;</span><span class="p">:</span>   <span class="p">[</span><span class="s1">&#39;configure&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;buildopts&#39;</span><span class="p">:</span>   <span class="s1">&#39;CC=&quot;$CC&quot; CFLAGS=&quot;-Wall -Winline -O2 -march=znver1 -fPIC -g \$(BIGFILES)&quot;&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;installopts&#39;</span><span class="p">:</span> <span class="s1">&#39;PREFIX=&quot;</span><span class="si">%(installdir)s</span><span class="s1">&quot; &#39;</span><span class="p">,</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;zlib&#39;</span><span class="p">,</span> <span class="n">local_syslibs_zlib_version</span><span class="p">,</span> <span class="p">{</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span>       <span class="p">[</span> <span class="p">{</span>
+                            <span class="c1"># https://www.zlib.net/zlib-1.2.11.tar.gz</span>
+                            <span class="s1">&#39;filename&#39;</span><span class="p">:</span>    <span class="n">SOURCELOWER_TAR_GZ</span><span class="p">,</span>
+                            <span class="s1">&#39;source_urls&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;https://www.zlib.net/&#39;</span><span class="p">]</span>
+                         <span class="p">}</span> <span class="p">],</span>
+        <span class="s1">&#39;start_dir&#39;</span><span class="p">:</span>     <span class="s1">&#39;</span><span class="si">%(namelower)s</span><span class="s1">-</span><span class="si">%(version)s</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;preconfigopts&#39;</span><span class="p">:</span> <span class="s1">&#39;CFLAGS=&quot;-O2 -march=znver1 -fPIC&quot; CXXFLAGS=&quot;-O2 -march=znver1 -fPIC&quot; &#39;</span><span class="p">,</span>
+        <span class="s1">&#39;configopts&#39;</span><span class="p">:</span>    <span class="s1">&#39;--static&#39;</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;lz4&#39;</span><span class="p">,</span> <span class="n">local_syslibs_lz4_version</span><span class="p">,</span> <span class="p">{</span>
+        <span class="c1"># The bzip2 EasyBlock does not work in a bundle since there is a problem with with_shared_libs</span>
+        <span class="c1"># https://sourceforge.net/projects/bzip2/files/bzip2-1.0.6.tar.gz/download</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span>     <span class="p">[</span> <span class="p">{</span>
+                          <span class="s1">&#39;download_filename&#39;</span><span class="p">:</span> <span class="s1">&#39;v</span><span class="si">%(version)s</span><span class="s1">.tar.gz&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;filename&#39;</span><span class="p">:</span>          <span class="n">SOURCELOWER_TAR_GZ</span><span class="p">,</span>
+                          <span class="s1">&#39;source_urls&#39;</span><span class="p">:</span>       <span class="p">[</span><span class="s1">&#39;https://github.com/lz4/lz4/archive/&#39;</span><span class="p">]</span>
+                       <span class="p">}</span> <span class="p">],</span>
+        <span class="s1">&#39;start_dir&#39;</span><span class="p">:</span>   <span class="s1">&#39;</span><span class="si">%(namelower)s</span><span class="s1">-</span><span class="si">%(version)s</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;skipsteps&#39;</span><span class="p">:</span>   <span class="p">[</span><span class="s1">&#39;configure&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;buildopts&#39;</span><span class="p">:</span>   <span class="s1">&#39;BUILD_STATIC=&quot;yes&quot; BUILD_SHARED=&quot;no&quot; CFLAGS=&quot;-O3 -march=znver1 -fPIC&quot; &#39;</span><span class="p">,</span>
+        <span class="s1">&#39;runtest&#39;</span><span class="p">:</span>     <span class="s1">&#39;check&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;installopts&#39;</span><span class="p">:</span> <span class="s1">&#39;PREFIX=</span><span class="si">%(installdir)s</span><span class="s1"> BUILD_STATIC=&quot;yes&quot; BUILD_SHARED=&quot;no&quot;&#39;</span><span class="p">,</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;expat&#39;</span><span class="p">,</span> <span class="n">local_syslibs_expat_version</span><span class="p">,</span> <span class="p">{</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span>       <span class="p">[</span> <span class="p">{</span>
+                            <span class="s1">&#39;filename&#39;</span><span class="p">:</span>    <span class="n">SOURCELOWER_TAR_BZ2</span><span class="p">,</span>
+                            <span class="s1">&#39;source_urls&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">SOURCEFORGE_SOURCE</span><span class="p">]</span>
+                         <span class="p">}],</span>
+        <span class="s1">&#39;start_dir&#39;</span><span class="p">:</span>     <span class="s1">&#39;</span><span class="si">%(namelower)s</span><span class="s1">-</span><span class="si">%(version)s</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;preconfigopts&#39;</span><span class="p">:</span> <span class="s1">&#39;CFLAGS=&quot;-O2 -march=znver1 -fPIC&quot; CXXFLAGS=&quot;-O2 -march=znver1 -fPIC&quot; &#39;</span><span class="p">,</span>
+        <span class="s1">&#39;configopts&#39;</span><span class="p">:</span>    <span class="s1">&#39;--enable-static --disable-shared&#39;</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;APR&#39;</span><span class="p">,</span> <span class="n">local_syslibs_APR_version</span><span class="p">,</span> <span class="p">{</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span>       <span class="p">[</span> <span class="p">{</span>
+                            <span class="s1">&#39;filename&#39;</span><span class="p">:</span>    <span class="n">SOURCELOWER_TAR_BZ2</span><span class="p">,</span>
+                            <span class="s1">&#39;source_urls&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;https://downloads.apache.org/apr&#39;</span><span class="p">]</span>
+                         <span class="p">}],</span>
+        <span class="s1">&#39;start_dir&#39;</span><span class="p">:</span>     <span class="s1">&#39;</span><span class="si">%(namelower)s</span><span class="s1">-</span><span class="si">%(version)s</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;preconfigopts&#39;</span><span class="p">:</span> <span class="s1">&#39;CC=&quot;gcc&quot; CFLAGS=&quot;-O2 -march=znver1 -fPIC&quot; &#39;</span><span class="p">,</span>
+        <span class="s1">&#39;configopts&#39;</span><span class="p">:</span>    <span class="s1">&#39;--enable-static --disable-shared&#39;</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;APR-util&#39;</span><span class="p">,</span> <span class="n">local_syslibs_APR_util_version</span><span class="p">,</span> <span class="p">{</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span>       <span class="p">[</span> <span class="p">{</span>
+                            <span class="s1">&#39;filename&#39;</span><span class="p">:</span>    <span class="n">SOURCELOWER_TAR_BZ2</span><span class="p">,</span>
+                            <span class="s1">&#39;source_urls&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;https://downloads.apache.org/apr&#39;</span><span class="p">]</span>
+                         <span class="p">}],</span>
+        <span class="s1">&#39;start_dir&#39;</span><span class="p">:</span>     <span class="s1">&#39;</span><span class="si">%(namelower)s</span><span class="s1">-</span><span class="si">%(version)s</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;preconfigopts&#39;</span><span class="p">:</span> <span class="s1">&#39;CC=&quot;gcc&quot; CFLAGS=&quot;-O2 -march=znver1 -fPIC&quot; &#39;</span><span class="p">,</span>
+        <span class="s1">&#39;configopts&#39;</span><span class="p">:</span>    <span class="s1">&#39;--with-apr=</span><span class="si">%(installdir)s</span><span class="s1">/bin/apr-1-config --enable-static --disable-shared&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;installopts&#39;</span><span class="p">:</span>   <span class="s1">&#39; &amp;&amp; cd </span><span class="si">%(installdir)s</span><span class="s1">/lib/pkgconfig &amp;&amp; sed -i -e &quot;s|-lexpat|-L</span><span class="si">%(installdir)s</span><span class="s1">/lib -lexpat|&quot; apr-util-1.pc&#39;</span> <span class="o">+</span>
+                         <span class="s1">&#39; &amp;&amp; cd </span><span class="si">%(installdir)s</span><span class="s1">/bin           &amp;&amp; sed -i -e &quot;s|-lexpat|-L</span><span class="si">%(installdir)s</span><span class="s1">/lib -lexpat|&quot; apu-1-config&#39;</span>
+
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;Serf&#39;</span><span class="p">,</span> <span class="n">local_syslibs_Serf_version</span><span class="p">,</span> <span class="p">{</span>
+        <span class="s1">&#39;easyblock&#39;</span><span class="p">:</span>     <span class="s1">&#39;SCons&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span>       <span class="p">[</span> <span class="p">{</span>
+                            <span class="s1">&#39;filename&#39;</span><span class="p">:</span>    <span class="n">SOURCELOWER_TAR_BZ2</span><span class="p">,</span>
+                            <span class="s1">&#39;source_urls&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;https://archive.apache.org/dist/</span><span class="si">%(namelower)s</span><span class="s1">&#39;</span><span class="p">]</span>
+                         <span class="p">}],</span>
+        <span class="s1">&#39;patches&#39;</span><span class="p">:</span>       <span class="p">[</span><span class="s1">&#39;Serf-</span><span class="si">%(version)s</span><span class="s1">_python3_scons.patch&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;start_dir&#39;</span><span class="p">:</span>     <span class="s1">&#39;</span><span class="si">%(namelower)s</span><span class="s1">-</span><span class="si">%(version)s</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;buildopts&#39;</span><span class="p">:</span>     <span class="s1">&#39;APR=</span><span class="si">%(installdir)s</span><span class="s1">/bin/apr-1-config APU=</span><span class="si">%(installdir)s</span><span class="s1">/bin/apu-1-config APR_STATIC=True &#39;</span> <span class="o">+</span>
+                         <span class="s1">&#39;ZLIB=</span><span class="si">%(installdir)s</span><span class="s1"> &#39;</span> <span class="o">+</span>
+                         <span class="s1">&#39;CFLAGS=&quot;-O3 -march=znver1 -fPIC -Wno-pointer-sign&quot; &#39;</span><span class="p">,</span>
+        <span class="s1">&#39;installopts&#39;</span><span class="p">:</span>   <span class="s1">&#39; &amp;&amp; cd </span><span class="si">%(installdir)s</span><span class="s1">/lib &amp;&amp; /bin/rm *.so*&#39;</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;file&#39;</span><span class="p">,</span> <span class="n">local_syslibs_file_version</span><span class="p">,</span> <span class="p">{</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span>       <span class="p">[</span> <span class="p">{</span>
+                            <span class="s1">&#39;filename&#39;</span><span class="p">:</span>    <span class="n">SOURCE_TAR_GZ</span><span class="p">,</span>
+                            <span class="s1">&#39;source_urls&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;http://ftp.astron.com/pub/file/&#39;</span><span class="p">]</span>
+                         <span class="p">}</span> <span class="p">],</span>
+        <span class="s1">&#39;start_dir&#39;</span><span class="p">:</span>     <span class="s1">&#39;</span><span class="si">%(namelower)s</span><span class="s1">-</span><span class="si">%(version)s</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;preconfigopts&#39;</span><span class="p">:</span> <span class="s1">&#39;CFLAGS=&quot;-O2 -march=znver1 -fPIC&quot; CXXFLAGS=&quot;-O2 -march=znver1 -fPIC&quot; &#39;</span><span class="p">,</span>
+        <span class="s1">&#39;configopts&#39;</span><span class="p">:</span>    <span class="s1">&#39;--enable-static --disable-shared&#39;</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;PCRE2&#39;</span><span class="p">,</span> <span class="n">local_syslibs_PCRE2_version</span><span class="p">,</span> <span class="p">{</span>
+        <span class="c1"># https://github.com/PhilipHazel/pcre2/releases/download/pcre2-10.39/pcre2-10.39.tar.bz2</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span>       <span class="p">[</span><span class="n">SOURCELOWER_TAR_BZ2</span><span class="p">],</span>
+        <span class="s1">&#39;source_urls&#39;</span><span class="p">:</span>   <span class="p">[</span><span class="s1">&#39;https://github.com/PhilipHazel/pcre2/releases/download/pcre2-</span><span class="si">%(version)s</span><span class="s1">&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;start_dir&#39;</span><span class="p">:</span>     <span class="s1">&#39;</span><span class="si">%(namelower)s</span><span class="s1">-</span><span class="si">%(version)s</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;preconfigopts&#39;</span><span class="p">:</span> <span class="s1">&#39;CFLAGS=&quot;-O2 -march=znver1 -fPIC&quot; CXXFLAGS=&quot;-O2 -march=znver1 -fPIC&quot; &#39;</span><span class="p">,</span>
+        <span class="s1">&#39;configopts&#39;</span><span class="p">:</span>    <span class="s1">&#39;--with-pic --disable-cpp --enable-newline-is-any &#39;</span> <span class="o">+</span> \
+                         <span class="s1">&#39;--enable-pcre2-16 --enable-pcre2-32 --enable-jit &#39;</span> <span class="o">+</span> \
+                         <span class="s1">&#39;--enable-pcre2grep-libz --enable-pcre2grep-libbz2 --enable-pcre2test-libreadline &#39;</span> <span class="o">+</span> \
+                         <span class="s1">&#39;--disable-shared --enable-static &#39;</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;SQLite3&#39;</span><span class="p">,</span> <span class="n">local_syslibs_SQLite3_version</span><span class="p">,</span> <span class="p">{</span>
+        <span class="c1"># https://www.sqlite.org/2022/sqlite-autoconf-3370200.tar.gz</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span>       <span class="p">[</span> <span class="p">{</span>
+                            <span class="s1">&#39;filename&#39;</span><span class="p">:</span>    <span class="s1">&#39;sqlite-autoconf-</span><span class="si">%s</span><span class="s1">.tar.gz&#39;</span> <span class="o">%</span> <span class="n">local_SQLite3_filename_version</span><span class="p">,</span>
+                            <span class="s1">&#39;source_urls&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;https://www.sqlite.org/2022&#39;</span><span class="p">]</span>
+                         <span class="p">}</span> <span class="p">],</span>
+        <span class="s1">&#39;start_dir&#39;</span><span class="p">:</span>     <span class="s1">&#39;sqlite-autoconf-&#39;</span> <span class="o">+</span> <span class="n">local_SQLite3_filename_version</span><span class="p">,</span>
+        <span class="s1">&#39;preconfigopts&#39;</span><span class="p">:</span> <span class="s1">&#39;CC=&quot;gcc&quot; CFLAGS=&quot;-O2 -march=znver1 -fPIC&quot; &#39;</span><span class="p">,</span>
+        <span class="s1">&#39;configopts&#39;</span><span class="p">:</span>    <span class="s1">&#39;--enable-static --disable-shared&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;parallel&#39;</span><span class="p">:</span>      <span class="mi">1</span><span class="p">,</span>
+    <span class="p">}),</span>
+<span class="p">]</span>
+
+<span class="n">sanity_check_paths</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;files&#39;</span><span class="p">:</span> <span class="c1"># ncurses</span>
+             <span class="p">[</span><span class="s1">&#39;lib/lib</span><span class="si">%s%s</span><span class="s1">.a&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;form&quot;</span><span class="p">,</span> <span class="s2">&quot;menu&quot;</span><span class="p">,</span> <span class="s2">&quot;ncurses&quot;</span><span class="p">,</span> <span class="s2">&quot;panel&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;_g&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="s1">&#39;w_g&#39;</span><span class="p">]]</span> <span class="o">+</span>
+             <span class="p">[</span><span class="s1">&#39;lib/libncurses++</span><span class="si">%s</span><span class="s1">.a&#39;</span> <span class="o">%</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">]]</span> <span class="o">+</span>
+             <span class="p">[</span><span class="s1">&#39;lib/pkgconfig/</span><span class="si">%s%s</span><span class="s1">.pc&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;form&#39;</span><span class="p">,</span> <span class="s1">&#39;menu&#39;</span><span class="p">,</span> <span class="s1">&#39;ncurses&#39;</span><span class="p">,</span> <span class="s1">&#39;ncurses++&#39;</span><span class="p">,</span> <span class="s1">&#39;panel&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">]]</span> <span class="o">+</span>
+             <span class="c1"># libreadline</span>
+             <span class="p">[</span><span class="s1">&#39;lib/libreadline.a&#39;</span><span class="p">,</span> <span class="s1">&#39;lib/libhistory.a&#39;</span><span class="p">]</span> <span class="o">+</span>
+             <span class="p">[</span><span class="s1">&#39;include/readline/</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">x</span>
+              <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;chardefs.h&#39;</span><span class="p">,</span> <span class="s1">&#39;history.h&#39;</span><span class="p">,</span> <span class="s1">&#39;keymaps.h&#39;</span><span class="p">,</span> <span class="s1">&#39;readline.h&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;rlconf.h&#39;</span><span class="p">,</span> <span class="s1">&#39;rlstdc.h&#39;</span><span class="p">,</span> <span class="s1">&#39;rltypedefs.h&#39;</span><span class="p">,</span> <span class="s1">&#39;tilde.h&#39;</span><span class="p">]]</span> <span class="o">+</span>
+             <span class="c1"># bzip2 libraries</span>
+             <span class="p">[</span><span class="s1">&#39;lib/libbz2.a&#39;</span><span class="p">,</span> <span class="s1">&#39;lib/pkgconfig/bzip2.pc&#39;</span><span class="p">,</span> <span class="s1">&#39;include/bzlib.h&#39;</span><span class="p">]</span> <span class="o">+</span>
+             <span class="c1"># zlib</span>
+             <span class="p">[</span><span class="s1">&#39;include/zconf.h&#39;</span><span class="p">,</span> <span class="s1">&#39;include/zlib.h&#39;</span><span class="p">,</span> <span class="s1">&#39;lib/libz.a&#39;</span><span class="p">,</span> <span class="s1">&#39;lib/pkgconfig/zlib.pc&#39;</span><span class="p">]</span> <span class="o">+</span>
+             <span class="c1"># lz4</span>
+             <span class="p">[</span><span class="s2">&quot;bin/lz4&quot;</span><span class="p">,</span> <span class="s2">&quot;lib/liblz4.a&quot;</span><span class="p">,</span> <span class="s2">&quot;include/lz4.h&quot;</span><span class="p">]</span> <span class="o">+</span>
+             <span class="c1"># expat</span>
+             <span class="p">[</span><span class="s1">&#39;bin/xmlwf&#39;</span><span class="p">,</span> <span class="s1">&#39;include/expat.h&#39;</span><span class="p">,</span> <span class="s1">&#39;lib/libexpat.a&#39;</span><span class="p">,</span> <span class="s1">&#39;lib/pkgconfig/expat.pc&#39;</span><span class="p">]</span> <span class="o">+</span>
+             <span class="p">[</span><span class="s1">&#39;bin/file&#39;</span><span class="p">,</span> <span class="s1">&#39;lib/libmagic.a&#39;</span><span class="p">,</span> <span class="s1">&#39;lib/libmagic.la&#39;</span><span class="p">,</span> <span class="s1">&#39;include/magic.h&#39;</span><span class="p">]</span> <span class="o">+</span>
+             <span class="p">[</span><span class="s1">&#39;share/man/man1/file.1&#39;</span><span class="p">,</span> <span class="s1">&#39;share/man/man3/libmagic.3&#39;</span><span class="p">,</span> <span class="s1">&#39;share/man/man4/magic.4&#39;</span><span class="p">]</span> <span class="o">+</span>
+             <span class="c1"># APR</span>
+             <span class="p">[</span><span class="s2">&quot;bin/apr-1-config&quot;</span><span class="p">,</span> <span class="s2">&quot;lib/libapr-1.a&quot;</span><span class="p">]</span> <span class="o">+</span>
+             <span class="c1"># APR-util</span>
+             <span class="p">[</span><span class="s2">&quot;bin/apu-1-config&quot;</span><span class="p">,</span> <span class="s2">&quot;lib/libaprutil-1.a&quot;</span><span class="p">]</span> <span class="o">+</span>
+             <span class="c1"># Serf</span>
+             <span class="p">[</span><span class="s1">&#39;include/serf-1/serf.h&#39;</span><span class="p">,</span> <span class="s1">&#39;lib/libserf-1.a&#39;</span><span class="p">]</span> <span class="o">+</span>
+             <span class="c1"># PCRE2</span>
+             <span class="p">[</span><span class="s1">&#39;bin/</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;pcre2-config&#39;</span><span class="p">,</span> <span class="s1">&#39;pcre2grep&#39;</span><span class="p">,</span> <span class="s1">&#39;pcre2test&#39;</span><span class="p">]]</span> <span class="o">+</span>
+             <span class="p">[</span><span class="s1">&#39;share/man/man1/</span><span class="si">%s</span><span class="s1">.1&#39;</span> <span class="o">%</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;pcre2-config&#39;</span><span class="p">,</span> <span class="s1">&#39;pcre2grep&#39;</span><span class="p">,</span> <span class="s1">&#39;pcre2test&#39;</span><span class="p">]]</span> <span class="o">+</span>
+             <span class="p">[</span><span class="s1">&#39;lib/libpcre2-</span><span class="si">%s</span><span class="s1">.</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;posix&#39;</span><span class="p">,</span> <span class="s1">&#39;8&#39;</span><span class="p">,</span> <span class="s1">&#39;16&#39;</span><span class="p">,</span> <span class="s1">&#39;32&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;la&#39;</span><span class="p">]]</span> <span class="o">+</span>
+             <span class="p">[</span><span class="s1">&#39;lib/pkgconfig/libpcre2-</span><span class="si">%s</span><span class="s1">.pc&#39;</span> <span class="o">%</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;posix&#39;</span><span class="p">,</span> <span class="s1">&#39;8&#39;</span><span class="p">,</span> <span class="s1">&#39;16&#39;</span><span class="p">,</span> <span class="s1">&#39;32&#39;</span><span class="p">]]</span> <span class="o">+</span>
+             <span class="p">[</span><span class="s1">&#39;include/pcre2.h&#39;</span><span class="p">,</span> <span class="s1">&#39;include/pcre2posix.h&#39;</span><span class="p">]</span> <span class="o">+</span>
+             <span class="c1"># SQLite3</span>
+             <span class="p">[</span><span class="s1">&#39;bin/sqlite3&#39;</span><span class="p">,</span> <span class="s1">&#39;include/sqlite3ext.h&#39;</span><span class="p">,</span> <span class="s1">&#39;include/sqlite3.h&#39;</span><span class="p">,</span> <span class="s1">&#39;lib/libsqlite3.a&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;dirs&#39;</span><span class="p">:</span>  <span class="c1"># ncurses</span>
+             <span class="p">[</span><span class="s1">&#39;include/ncursesw&#39;</span><span class="p">]</span> <span class="o">+</span>
+             <span class="c1"># lz4</span>
+             <span class="p">[</span><span class="s1">&#39;lib/pkgconfig&#39;</span><span class="p">]</span> <span class="o">+</span>
+             <span class="c1"># expat</span>
+             <span class="p">[</span><span class="s1">&#39;lib/cmake/expat-</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">local_syslibs_expat_version</span><span class="p">]</span> <span class="o">+</span>
+             <span class="c1"># APR</span>
+             <span class="p">[</span><span class="s2">&quot;include/apr-1&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">sanity_check_commands</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># ncurses</span>
+    <span class="s1">&#39;pkg-config --libs </span><span class="si">%s%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;form&#39;</span><span class="p">,</span> <span class="s1">&#39;menu&#39;</span><span class="p">,</span> <span class="s1">&#39;ncurses&#39;</span><span class="p">,</span> <span class="s1">&#39;ncurses++&#39;</span><span class="p">,</span> <span class="s1">&#39;panel&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">]</span> <span class="p">]</span> <span class="o">+</span> <span class="p">[</span>
+    <span class="c1"># bzip2</span>
+    <span class="s1">&#39;pkg-config --libs bzip2&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span>
+    <span class="c1"># zlib</span>
+    <span class="s1">&#39;pkg-config --libs zlib&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span>
+    <span class="c1"># lz4</span>
+    <span class="s1">&#39;lz4 --version&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;unlz4 --version&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;pkg-config --libs liblz4&#39;</span> <span class="p">]</span> <span class="o">+</span> <span class="p">[</span>
+    <span class="c1"># expat</span>
+    <span class="s1">&#39;xmlwf -h&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;pkg-config --libs expat&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span>
+    <span class="c1"># APR</span>
+    <span class="s1">&#39;apr-1-config --help&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;pkg-config --libs apr-1&#39;</span> <span class="p">]</span> <span class="o">+</span> <span class="p">[</span>
+    <span class="c1"># APR-util</span>
+    <span class="s1">&#39;apu-1-config --help&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;pkg-config --libs apr-util-1&#39;</span> <span class="p">]</span> <span class="o">+</span> <span class="p">[</span>
+    <span class="c1"># Serf</span>
+    <span class="s1">&#39;pkg-config --libs serf-1&#39;</span> <span class="p">]</span> <span class="o">+</span> <span class="p">[</span>
+    <span class="c1"># file</span>
+    <span class="s1">&#39;file --version&#39;</span> <span class="p">]</span> <span class="o">+</span> <span class="p">[</span>
+    <span class="c1"># PCRE2</span>
+    <span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> --version&#39;</span> <span class="o">%</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;pcre2-config&#39;</span><span class="p">,</span> <span class="s1">&#39;pcre2grep&#39;</span><span class="p">,</span> <span class="s1">&#39;pcre2test&#39;</span><span class="p">]]</span> <span class="o">+</span> <span class="p">[</span>
+    <span class="s1">&#39;pkg-config --libs libpcre2-</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;posix&#39;</span><span class="p">,</span> <span class="s1">&#39;8&#39;</span><span class="p">,</span> <span class="s1">&#39;16&#39;</span><span class="p">,</span> <span class="s1">&#39;32&#39;</span><span class="p">]]</span> <span class="o">+</span> <span class="p">[</span>
+    <span class="c1"># SQLite3</span>
+    <span class="s1">&#39;sqlite3 -version&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;pkg-config --libs sqlite3&#39;</span> <span class="p">]</span>
+
+<span class="n">modextravars</span> <span class="o">=</span> <span class="p">{</span>
+<span class="c1"># Bad idea to add the variables below as they confuse get_software_libdir</span>
+<span class="c1"># in some EasyBlocks. It will be very tricy to only add those that</span>
+<span class="c1"># we need for certain packages and avoid others...</span>
+<span class="c1">#    # For increased compatibility with standard EasyBuild recipes</span>
+    <span class="s1">&#39;EBROOTNCURSES&#39;</span><span class="p">:</span>                <span class="s1">&#39;</span><span class="si">%(installdir)s</span><span class="s1">&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;EBVERSIONNCURSES&#39;</span><span class="p">:</span>             <span class="n">local_syslibs_ncurses_version</span><span class="p">,</span>
+    <span class="s1">&#39;EBROOTLIBREADLINE&#39;</span><span class="p">:</span>            <span class="s1">&#39;</span><span class="si">%(installdir)s</span><span class="s1">&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;EBVERSIONLIBREADLINE&#39;</span><span class="p">:</span>         <span class="n">local_syslibs_libreadline_version</span><span class="p">,</span>
+    <span class="s1">&#39;EBROOTBZIP2&#39;</span><span class="p">:</span>                  <span class="s1">&#39;</span><span class="si">%(installdir)s</span><span class="s1">&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;EBVERSIONBZIP2&#39;</span><span class="p">:</span>               <span class="n">local_syslibs_bzip2_version</span><span class="p">,</span>
+    <span class="s1">&#39;EBROOTZLIB&#39;</span><span class="p">:</span>                   <span class="s1">&#39;</span><span class="si">%(installdir)s</span><span class="s1">&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;EBVERSIONZLIB&#39;</span><span class="p">:</span>                <span class="n">local_syslibs_zlib_version</span><span class="p">,</span>
+    <span class="s1">&#39;EBROOTLZ4&#39;</span><span class="p">:</span>                    <span class="s1">&#39;</span><span class="si">%(installdir)s</span><span class="s1">&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;EBVERSIONLZ4&#39;</span><span class="p">:</span>                 <span class="n">local_syslibs_zlib_version</span><span class="p">,</span>
+    <span class="s1">&#39;EBROOTEXPAT&#39;</span><span class="p">:</span>                  <span class="s1">&#39;</span><span class="si">%(installdir)s</span><span class="s1">&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;EBVERSIONEXPAT&#39;</span><span class="p">:</span>               <span class="n">local_syslibs_expat_version</span><span class="p">,</span>
+    <span class="s1">&#39;EBROOTAPR&#39;</span><span class="p">:</span>                    <span class="s1">&#39;</span><span class="si">%(installdir)s</span><span class="s1">&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;EBVERSIONAPR&#39;</span><span class="p">:</span>                 <span class="n">local_syslibs_APR_version</span><span class="p">,</span>
+    <span class="s1">&#39;EBROOTAPRMINUTIL&#39;</span><span class="p">:</span>             <span class="s1">&#39;</span><span class="si">%(installdir)s</span><span class="s1">&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;EBVERSIONAPRMINUTIL&#39;</span><span class="p">:</span>          <span class="n">local_syslibs_APR_util_version</span><span class="p">,</span>
+    <span class="s1">&#39;EBROOTFILE&#39;</span><span class="p">:</span>                   <span class="s1">&#39;</span><span class="si">%(installdir)s</span><span class="s1">&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;EBVERSIONFILE&#39;</span><span class="p">:</span>                <span class="n">local_syslibs_file_version</span><span class="p">,</span>
+    <span class="s1">&#39;EBROOTPCRE2&#39;</span><span class="p">:</span>                  <span class="s1">&#39;</span><span class="si">%(installdir)s</span><span class="s1">&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;EBVERSIONPCRE2&#39;</span><span class="p">:</span>               <span class="n">local_syslibs_PCRE2_version</span><span class="p">,</span>
+    <span class="s1">&#39;EBROOTSQLITE3&#39;</span><span class="p">:</span>                <span class="s1">&#39;</span><span class="si">%(installdir)s</span><span class="s1">&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;EBVERSIONSQLITE3&#39;</span><span class="p">:</span>             <span class="n">local_syslibs_SQLite3_version</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">moduleclass</span> <span class="o">=</span> <span class="s1">&#39;lib&#39;</span>
+</code></pre></div>
+<p><a href="../">[syslibs]</a> <a href="../../..">[package list]</a></p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://www.youtube.com/channel/UCb31KOJ6Wqu0sRpIRi_k8Mw" target="_blank" rel="noopener" title="LUMI on YouTube" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://www.linkedin.com/company/lumi-supercomputer" target="_blank" rel="noopener" title="LUMI on LinkedIn" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://twitter.com/LUMIhpc" target="_blank" rel="noopener" title="LUMI on Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "header.autohide", "toc.follow", "content.code.annotate", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.467223ff.min.js"></script>
+      
+    
+  </body>
+</html>

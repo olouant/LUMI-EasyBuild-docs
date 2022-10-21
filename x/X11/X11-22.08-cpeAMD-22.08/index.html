@@ -1,0 +1,1243 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for the LUMI EasyBuild-provided packages">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
+    
+    
+      
+        <title>X11/22.08-cpeAMD-22.08 (X11-22.08-cpeAMD-22.08.eb) - X11 - LUMI EasyBuild-provided software</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2d9f7617.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#x112208-cpeamd-2208-x11-2208-cpeamd-2208eb" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="LUMI EasyBuild-provided software" class="md-header__button md-logo" aria-label="LUMI EasyBuild-provided software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LUMI EasyBuild-provided software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              X11/22.08-cpeAMD-22.08 (X11-22.08-cpeAMD-22.08.eb) - X11
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent=""  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#a" class="md-tabs__link">
+      a
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#b" class="md-tabs__link">
+      b
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#c" class="md-tabs__link">
+      c
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#d" class="md-tabs__link">
+      d
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#e" class="md-tabs__link">
+      e
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#f" class="md-tabs__link">
+      f
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#g" class="md-tabs__link">
+      g
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#h" class="md-tabs__link">
+      h
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#i" class="md-tabs__link">
+      i
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#j" class="md-tabs__link">
+      j
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#l" class="md-tabs__link">
+      l
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#m" class="md-tabs__link">
+      m
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#n" class="md-tabs__link">
+      n
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#o" class="md-tabs__link">
+      o
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#p" class="md-tabs__link">
+      p
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#q" class="md-tabs__link">
+      q
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#r" class="md-tabs__link">
+      r
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#s" class="md-tabs__link">
+      s
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#t" class="md-tabs__link">
+      t
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#u" class="md-tabs__link">
+      u
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#v" class="md-tabs__link">
+      v
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#w" class="md-tabs__link">
+      w
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#x" class="md-tabs__link">
+      x
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#z" class="md-tabs__link">
+      z
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="LUMI EasyBuild-provided software" class="md-nav__button md-logo" aria-label="LUMI EasyBuild-provided software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    LUMI EasyBuild-provided software
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#a" class="md-nav__link">
+        a
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#b" class="md-nav__link">
+        b
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#c" class="md-nav__link">
+        c
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#d" class="md-nav__link">
+        d
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#e" class="md-nav__link">
+        e
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#f" class="md-nav__link">
+        f
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#g" class="md-nav__link">
+        g
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#h" class="md-nav__link">
+        h
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#i" class="md-nav__link">
+        i
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#j" class="md-nav__link">
+        j
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#l" class="md-nav__link">
+        l
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#m" class="md-nav__link">
+        m
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#n" class="md-nav__link">
+        n
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#o" class="md-nav__link">
+        o
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#p" class="md-nav__link">
+        p
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#q" class="md-nav__link">
+        q
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#r" class="md-nav__link">
+        r
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#s" class="md-nav__link">
+        s
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#t" class="md-nav__link">
+        t
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#u" class="md-nav__link">
+        u
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#v" class="md-nav__link">
+        v
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#w" class="md-nav__link">
+        w
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#x" class="md-nav__link">
+        x
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#z" class="md-nav__link">
+        z
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<p><a href="../">[X11]</a> <a href="../../..">[package list]</a></p>
+<h1 id="x112208-cpeamd-2208-x11-2208-cpeamd-2208eb">X11/22.08-cpeAMD-22.08 (X11-22.08-cpeAMD-22.08.eb)</h1>
+<p>To access module help and find out for which stacks and partitions the module is
+installed, use <code>module spider X11/22.08-cpeAMD-22.08</code>.</p>
+<p>EasyConfig:</p>
+<div class="highlight"><pre><span></span><code><span class="n">easyblock</span> <span class="o">=</span> <span class="s1">&#39;Bundle&#39;</span>
+
+<span class="n">local_bzip2_version</span> <span class="o">=</span>        <span class="s1">&#39;1.0.8&#39;</span>         <span class="c1"># http://www.bzip.org/downloads.html</span>
+<span class="n">local_fontconfig_version</span> <span class="o">=</span>   <span class="s1">&#39;2.14.0&#39;</span>        <span class="c1"># https://www.freedesktop.org/software/fontconfig/release/</span>
+<span class="n">local_freetype_version</span> <span class="o">=</span>     <span class="s1">&#39;2.12.1&#39;</span>        <span class="c1"># https://download.savannah.gnu.org/releases/freetype/</span>
+<span class="n">local_intltool_version</span> <span class="o">=</span>     <span class="s1">&#39;0.51.0&#39;</span>        <span class="c1"># https://launchpad.net/intltool/+download</span>
+<span class="n">local_libpciaccess_version</span> <span class="o">=</span> <span class="s1">&#39;0.16&#39;</span>          <span class="c1"># https://cgit.freedesktop.org/xorg/lib/libpciaccess/</span>
+<span class="n">local_xorg_macros_version</span> <span class="o">=</span>  <span class="s1">&#39;1.19.3&#39;</span>        <span class="c1"># https://cgit.freedesktop.org/xorg/util/macros</span>
+<span class="n">local_zlib_version</span> <span class="o">=</span>         <span class="s1">&#39;1.2.12&#39;</span>        <span class="c1"># https://zlib.net/</span>
+
+<span class="n">name</span> <span class="o">=</span>    <span class="s1">&#39;X11&#39;</span>
+<span class="n">version</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%(toolchain_version)s</span><span class="s1">&#39;</span>
+
+<span class="n">homepage</span> <span class="o">=</span> <span class="s1">&#39;https://www.x.org&#39;</span>
+
+<span class="n">whatis</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;Description: X Window System (X11) libraries, a windowing system for bitmap displays&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;This module contains static and shared libraries for a lot of libraries from the X11 system&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Local extensions: libXaw3D, libDRM and D-Bus (DBus), xproto, xdipyinfo, x11perf&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">The X Window System (X11, or shortened to simply X) is a windowing system for</span>
+<span class="s2">bitmap displays, common on UNIX-like computer operating systems.</span>
+
+<span class="s2">X provides the basic framework for a GUI environment: drawing and moving windows</span>
+<span class="s2">on the display device and interacting with a mouse and keyboard. X does not</span>
+<span class="s2">mandate the user interface – this is handled by individual programs. As such,</span>
+<span class="s2">the visual styling of X-based environments varies greatly; different programs</span>
+<span class="s2">may present radically different interfaces.</span>
+
+<span class="s2">This module contains static and shared libraries for a lot of libraries from the X11 system.</span>
+
+<span class="s2">This version does contain some additional tools and libraries on top of the standard</span>
+<span class="s2">EasyBuild X11 modules:</span>
+<span class="s2">* libdrm: Direct Rendering Manager runtime library.</span>
+<span class="s2">* DBus: D-Bus is a message bus system, a simple way for applications to talk</span>
+<span class="s2">  to one another.  In addition to interprocess communication, D-Bus helps</span>
+<span class="s2">  coordinate process lifecycle; it makes it simple and reliable to code</span>
+<span class="s2">  a &quot;single instance&quot; application or daemon, and to launch applications</span>
+<span class="s2">  and daemons on demand when their services are needed.</span>
+<span class="s2">* libXaw3D: A set of simple widgets</span>
+<span class="s2">* xporp: The xprop utility is for displaying window and font properties in an X server.</span>
+<span class="s2">  One window or font is selected using the command line arguments or possibly</span>
+<span class="s2">  in the case of a window, by clicking on the desired window. A list of</span>
+<span class="s2">  properties is then given, possibly with formatting information.</span>
+<span class="s2">* xdpyinfo and x11perf to quickly test if remote X is working.</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">toolchain</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;cpeAMD&#39;</span><span class="p">,</span> <span class="s1">&#39;version&#39;</span><span class="p">:</span> <span class="s1">&#39;22.08&#39;</span><span class="p">}</span>
+
+<span class="n">source_urls</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">XORG_LIB_SOURCE</span><span class="p">,</span>
+    <span class="n">XORG_PROTO_SOURCE</span><span class="p">,</span>
+    <span class="s1">&#39;https://xcb.freedesktop.org/dist/&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;https://xkbcommon.org/download/&#39;</span><span class="p">,</span>
+    <span class="n">XORG_DATA_SOURCE</span> <span class="o">+</span> <span class="s1">&#39;/xkeyboard-config&#39;</span><span class="p">,</span>
+    <span class="n">XORG_DATA_SOURCE</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="n">dependencies</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s1">&#39;bzip2&#39;</span><span class="p">,</span>        <span class="n">local_bzip2_version</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;fontconfig&#39;</span><span class="p">,</span>   <span class="n">local_fontconfig_version</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;freetype&#39;</span><span class="p">,</span>     <span class="n">local_freetype_version</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;zlib&#39;</span><span class="p">,</span>         <span class="n">local_zlib_version</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;libpciaccess&#39;</span><span class="p">,</span> <span class="n">local_libpciaccess_version</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;xorg-macros&#39;</span><span class="p">,</span>  <span class="n">local_xorg_macros_version</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>  <span class="c1"># Why here? To not have to add it as a build dependency in other packages???</span>
+<span class="p">]</span>
+
+
+<span class="n">builddependencies</span> <span class="o">=</span> <span class="p">[</span> <span class="c1"># Create a reproducible build environment.</span>
+    <span class="p">(</span><span class="s1">&#39;buildtools&#39;</span><span class="p">,</span>   <span class="s1">&#39;</span><span class="si">%(toolchain_version)s</span><span class="s1">&#39;</span><span class="p">,</span>   <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;intltool&#39;</span><span class="p">,</span>     <span class="n">local_intltool_version</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="n">default_easyblock</span> <span class="o">=</span> <span class="s1">&#39;ConfigureMake&#39;</span>
+
+<span class="n">default_component_specs</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;sources&#39;</span><span class="p">:</span>       <span class="p">[</span><span class="n">SOURCE_TAR_GZ</span><span class="p">],</span>
+    <span class="s1">&#39;start_dir&#39;</span><span class="p">:</span>     <span class="s1">&#39;</span><span class="si">%(name)s</span><span class="s1">-</span><span class="si">%(version)s</span><span class="s1">&#39;</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">components</span> <span class="o">=</span> <span class="p">[</span> <span class="c1"># List taken from the GCCcore 11.3.0 (2022b) common toolchain with own additions at the end</span>
+    <span class="p">(</span><span class="s1">&#39;libpthread-stubs&#39;</span><span class="p">,</span> <span class="s1">&#39;0.4&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2017-03-14</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;50d5686b79019ccea08bcbd7b02fe5a40634abcfd4146b6e75c6420cc170e9d9&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;xorgproto&#39;</span><span class="p">,</span> <span class="s1">&#39;2022.1&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2022-04-21</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2a399e77d98fe53e9056726a1934b62cbaa6c41d7b1f41a354911b0925363343&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXau&#39;</span><span class="p">,</span> <span class="s1">&#39;1.0.9&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2019-02-10</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;1f123d8304b082ad63a9e89376400a3b1d4c29e67e3ea07b3f659cccca690eea&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXdmcp&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.3&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2019-03-16</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2ef9653d32e09d1bf1b837d0e0311024979653fe755ad3aaada8db1aa6ea180c&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;xcb-proto&#39;</span><span class="p">,</span> <span class="s1">&#39;1.15&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2022-05-03</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;0e434af76af722ef9b2dc21066da1cd11e5dd85fc1996d66228d090f9ae9b217&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libxcb&#39;</span><span class="p">,</span> <span class="s1">&#39;1.15&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2022-05-03</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;1cb65df8543a69ec0555ac696123ee386321dfac1964a3da39976c9a05ad724d&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;xtrans&#39;</span><span class="p">,</span> <span class="s1">&#39;1.4.0&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2019-03-16</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;48ed850ce772fef1b44ca23639b0a57e38884045ed2cbb18ab137ef33ec713f9&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libxkbcommon&#39;</span><span class="p">,</span> <span class="s1">&#39;1.4.0&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2022-02-04</span>
+        <span class="s1">&#39;easyblock&#39;</span><span class="p">:</span> <span class="s1">&#39;MesonNinja&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">SOURCE_TAR_XZ</span><span class="p">],</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;106cec5263f9100a7e79b5f7220f889bc78e7d7ffc55d2b6fdb1efefb8024031&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;preconfigopts&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;configopts&#39;</span><span class="p">:</span> <span class="s1">&#39;-Denable-wayland=false -Denable-docs=false &#39;</span><span class="p">,</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libX11&#39;</span><span class="p">,</span> <span class="s1">&#39;1.8&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2022-04-29</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;68e0a30c4248b9f41492891a4b49672c3b0c59e84c4868144f03eef01ebc5eea&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXext&#39;</span><span class="p">,</span> <span class="s1">&#39;1.3.4&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2019-03-16</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;8ef0789f282826661ff40a8eef22430378516ac580167da35cc948be9041aac1&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libFS&#39;</span><span class="p">,</span> <span class="s1">&#39;1.0.8&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2019-03-10</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;e3da723257f4f4c0c629aec402e0a36fbec66a9418f70d24a159cb0470ec83d2&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libICE&#39;</span><span class="p">,</span> <span class="s1">&#39;1.0.10&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2019-07-14</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;1116bc64c772fd127a0d0c0ffa2833479905e3d3d8197740b3abd5f292f22d2d&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libSM&#39;</span><span class="p">,</span> <span class="s1">&#39;1.2.3&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2018-10-10</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;1e92408417cb6c6c477a8a6104291001a40b3bb56a4a60608fdd9cd2c5a0f320&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXScrnSaver&#39;</span><span class="p">,</span> <span class="s1">&#39;1.2.3&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2018-07-05</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;4f74e7e412144591d8e0616db27f433cfc9f45aae6669c6c4bb03e6bf9be809a&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXt&#39;</span><span class="p">,</span> <span class="s1">&#39;1.2.1&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2021-01-24</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;6da1bfa9dd0ed87430a5ce95b129485086394df308998ebe34d98e378e3dfb33&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXmu&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.3&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2019-03-16</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;5bd9d4ed1ceaac9ea023d86bf1c1632cd3b172dce4a193a72a94e1d9df87a62e&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXpm&#39;</span><span class="p">,</span> <span class="s1">&#39;3.5.13&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2019-12-13</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;e3dfb0fb8c1f127432f2a498c7856b37ce78a61e8da73f1aab165a73dd97ad00&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXaw&#39;</span><span class="p">,</span> <span class="s1">&#39;1.0.14&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2021-03-27</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;59cfed2712cc80bbfe62dd1aacf24f58d74a76dd08329a922077b134a8d8048f&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXfixes&#39;</span><span class="p">,</span> <span class="s1">&#39;6.0.0&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2021-05-11</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;82045da5625350838390c9440598b90d69c882c324ca92f73af9f0e992cb57c7&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXcomposite&#39;</span><span class="p">,</span> <span class="s1">&#39;0.4.5&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2019-03-11</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;581c7fc0f41a99af38b1c36b9be64bc13ef3f60091cd3f01105bbc7c01617d6c&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXrender&#39;</span><span class="p">,</span> <span class="s1">&#39;0.9.10&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2016-10-04</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;770527cce42500790433df84ec3521e8bf095dfe5079454a92236494ab296adf&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXcursor&#39;</span><span class="p">,</span> <span class="s1">&#39;1.2.1&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2022-04-03</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;77f96b9ad0a3c422cfa826afabaf1e02b9bfbfc8908c5fa1a45094faad074b98&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXdamage&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.5&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2019-03-11</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;630ec53abb8c2d6dac5cd9f06c1f73ffb4a3167f8118fdebd77afd639dbc2019&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libfontenc&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.4&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2019-02-20</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;895ee0986b32fbfcda7f4f25ef6cbacfa760e1690bf59f02085ce0e7d1eebb41&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXfont&#39;</span><span class="p">,</span> <span class="s1">&#39;1.5.4&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2017-11-28</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;59be6eab53f7b0feb6b7933c11d67d076ae2c0fd8921229c703fc7a4e9a80d6e&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXfont2&#39;</span><span class="p">,</span> <span class="s1">&#39;2.0.5&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2021-08-02</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;d7544aa35ea67a87840ff0b1bd15130b102e473de3611b7d78604ba635fd6d94&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXft&#39;</span><span class="p">,</span> <span class="s1">&#39;2.3.4&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2021-08-02</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;1eca71bec9cb483165ce1ab94f5cd3036269f5268651df6a2d99c4a7ab644d79&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXi&#39;</span><span class="p">,</span> <span class="s1">&#39;1.8&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2021-09-15</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;c80fd200a1190e4406bb4cc6958839d9651638cb47fa546a595d4bebcd3b9e2d&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXinerama&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.4&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2018-07-05</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;64de45e18cc76b8e703cb09b3c9d28bd16e3d05d5cd99f2d630de2d62c3acc18&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXrandr&#39;</span><span class="p">,</span> <span class="s1">&#39;1.5.2&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2019-03-16</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;3f10813ab355e7a09f17e147d61b0ce090d898a5ea5b5519acd0ef68675dcf8e&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXres&#39;</span><span class="p">,</span> <span class="s1">&#39;1.2.1&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2021-03-31</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;918fb33c3897b389a1fbb51571c5c04c6b297058df286d8b48faa5af85e88bcc&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXtst&#39;</span><span class="p">,</span> <span class="s1">&#39;1.2.3&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2016-10-04</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;a0c83acce02d4923018c744662cb28eb0dbbc33b4adc027726879ccf68fbc2c2&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXv&#39;</span><span class="p">,</span> <span class="s1">&#39;1.0.11&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2016-10-04</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;c4112532889b210e21cf05f46f0f2f8354ff7e1b58061e12d7a76c95c0d47bb1&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXvMC&#39;</span><span class="p">,</span> <span class="s1">&#39;1.0.13&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2022-03-22</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;e630b4373af8c67a7c8f07ebe626a1269a613d262d1f737b57231a06f7c34b4e&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXxf86dga&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.5&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2019-03-16</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;715e2bf5caf6276f0858eb4b11a1aef1a26beeb40dce2942387339da395bef69&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXxf86vm&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.4&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2015-02-24</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;5108553c378a25688dcb57dca383664c36e293d60b1505815f67980ba9318a99&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libdmx&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.4&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2018-05-14</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;4d05bd5b248c1f46729fa1536b7a5e4d692567327ad41564c36742fb327af925&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libxkbfile&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.0&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2019-03-16</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2a92adda3992aa7cbad758ef0b8dfeaedebb49338b772c64ddf369d78c1c51d3&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libxshmfence&#39;</span><span class="p">,</span> <span class="s1">&#39;1.3&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2018-02-26</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;7eb3d46ad91bab444f121d475b11b39273142d090f7e9ac43e6a87f4ff5f902c&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;xcb-util&#39;</span><span class="p">,</span> <span class="s1">&#39;0.4.0&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2014-10-15</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;0ed0934e2ef4ddff53fcc70fc64fb16fe766cd41ee00330312e20a985fd927a7&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;xcb-util-image&#39;</span><span class="p">,</span> <span class="s1">&#39;0.4.0&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2014-10-15</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;cb2c86190cf6216260b7357a57d9100811bb6f78c24576a3a5bfef6ad3740a42&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;xcb-util-keysyms&#39;</span><span class="p">,</span> <span class="s1">&#39;0.4.0&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2014-10-01</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;0807cf078fbe38489a41d755095c58239e1b67299f14460dec2ec811e96caa96&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;xcb-util-renderutil&#39;</span><span class="p">,</span> <span class="s1">&#39;0.3.9&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2014-06-13</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;55eee797e3214fe39d0f3f4d9448cc53cffe06706d108824ea37bb79fcedcad5&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;xcb-util-wm&#39;</span><span class="p">,</span> <span class="s1">&#39;0.4.1&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2014-02-19</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;038b39c4bdc04a792d62d163ba7908f4bb3373057208c07110be73c1b04b8334&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;xcb-util-cursor&#39;</span><span class="p">,</span> <span class="s1">&#39;0.1.3&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2016-05-12</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;a322332716a384c94d3cbf98f2d8fe2ce63c2fe7e2b26664b6cea1d411723df8&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;xkeyboard-config&#39;</span><span class="p">,</span> <span class="s1">&#39;2.35.1&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2022-02-08</span>
+        <span class="s1">&#39;easyblock&#39;</span><span class="p">:</span> <span class="s1">&#39;MesonNinja&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">SOURCE_TAR_XZ</span><span class="p">],</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;18ce50ff0c74ae6093062bce1aeab3d363913ea35162fe271f8a0ce399de85cc&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;preconfigopts&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;printproto&#39;</span><span class="p">,</span> <span class="s1">&#39;1.0.5&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2011-01-06</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;e8b6f405fd865f0ea7a3a2908dfbf06622f57f2f91359ec65d13b955e49843fc&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libXp&#39;</span><span class="p">,</span> <span class="s1">&#39;1.0.3&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2015-02-21</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;f6b8cc4ef05d3eafc9ef5fc72819dd412024b4ed60197c0d5914758125817e9c&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;xbitmaps&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.2&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2018-03-10</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;27e700e8ee02c43f7206f4eca8f1953ad15236cac95d7a0f08505c3f7d99c265&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+<span class="c1">#</span>
+<span class="c1"># Local additions</span>
+<span class="c1">#</span>
+    <span class="p">(</span><span class="s1">&#39;libXaw3d&#39;</span><span class="p">,</span> <span class="s1">&#39;1.6.3&#39;</span><span class="p">,</span> <span class="p">{</span>  <span class="c1"># 2018-06-19, https://www.x.org/releases/individual/lib/</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;9f42b409e5a4a0d7a2c94595b31d17fc078e5e307d14389dbc396754c3a01fcc&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;libdrm&#39;</span><span class="p">,</span> <span class="s1">&#39;2.4.111&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="c1"># 2022-06-03 http://dri.freedesktop.org/libdrm/, used by Qt5</span>
+        <span class="s1">&#39;easyblock&#39;</span><span class="p">:</span>     <span class="s1">&#39;MesonNinja&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span>       <span class="p">[</span><span class="n">SOURCELOWER_TAR_XZ</span><span class="p">],</span>
+        <span class="s1">&#39;source_urls&#39;</span><span class="p">:</span>   <span class="p">[</span><span class="s1">&#39;http://dri.freedesktop.org/libdrm/&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span>     <span class="p">[</span><span class="s1">&#39;1ad7164f77424de6f4ecba7c262bde196a214c6e19a6fbf497f0815f4d7ab2a9&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;preconfigopts&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;DBus&#39;</span><span class="p">,</span> <span class="s1">&#39;1.14.0&#39;</span><span class="p">,</span> <span class="p">{</span><span class="c1"># 2022-02-28 http://dbus.freedesktop.org/releases/dbus</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span>     <span class="p">[</span><span class="n">SOURCELOWER_TAR_XZ</span><span class="p">],</span>
+        <span class="s1">&#39;source_urls&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;http://dbus.freedesktop.org/releases/dbus&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span>   <span class="p">[</span><span class="s1">&#39;ccd7cce37596e0a19558fd6648d1272ab43f011d80c8635aea8fd0bad58aebd4&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;start_dir&#39;</span><span class="p">:</span>   <span class="s1">&#39;</span><span class="si">%(namelower)s</span><span class="s1">-</span><span class="si">%(version)s</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;configopts&#39;</span><span class="p">:</span>  <span class="s1">&#39;--without-systemdsystemunitdir&#39;</span><span class="p">,</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;xprop&#39;</span><span class="p">,</span> <span class="s1">&#39;1.2.5&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="c1"># 2020-11-20 https://www.x.org/archive/individual/app/, used by FLTK</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span>     <span class="p">[</span><span class="n">SOURCELOWER_TAR_BZ2</span><span class="p">],</span>
+        <span class="s1">&#39;source_urls&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;http://ftp.x.org/archive/individual/app/&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span>   <span class="p">[</span><span class="s1">&#39;9b92ed0316bf2486121d8bac88bd1878f16b43bd335f18009b1f941f1eca93a1&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;xdpyinfo&#39;</span><span class="p">,</span> <span class="s1">&#39;1.3.3&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="c1"># 2022-04-07 https://www.x.org/archive/individual/app/, simply to test the screen</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span>     <span class="p">[</span><span class="n">SOURCELOWER_TAR_XZ</span><span class="p">],</span>
+        <span class="s1">&#39;source_urls&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;http://ftp.x.org/archive/individual/app/&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span>   <span class="p">[</span><span class="s1">&#39;356d5fd62f3e98ee36d6becf1b32d4ab6112d618339fb4b592ccffbd9e0fc206&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;x11perf&#39;</span><span class="p">,</span> <span class="s1">&#39;1.6.1&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="c1"># 2019-03-16 https://www.x.org/archive/individual/app/, simply to test the screen</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span>     <span class="p">[</span><span class="n">SOURCELOWER_TAR_BZ2</span><span class="p">],</span>
+        <span class="s1">&#39;source_urls&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;http://ftp.x.org/archive/individual/app/&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span>   <span class="p">[</span><span class="s1">&#39;1c7e0b8ffc2794b4ccf11e04d551823abe0ea47b4f7db0637390db6fbe817c34&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+    <span class="p">(</span><span class="s1">&#39;xauth&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.2&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="c1"># 2022-04-20 https://www.x.org/archive/individual/app/, sometimes useful</span>
+        <span class="s1">&#39;sources&#39;</span><span class="p">:</span>     <span class="p">[</span><span class="n">SOURCELOWER_TAR_XZ</span><span class="p">],</span>
+        <span class="s1">&#39;source_urls&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;http://ftp.x.org/archive/individual/app/&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;checksums&#39;</span><span class="p">:</span>   <span class="p">[</span><span class="s1">&#39;78ba6afd19536ced1dddb3276cba6e9555a211b468a06f95f6a97c62ff8ee200&#39;</span><span class="p">],</span>
+    <span class="p">}),</span>
+<span class="p">]</span>
+
+<span class="n">preconfigopts</span> <span class="o">=</span> <span class="s2">&quot;if [ ! -f configure ]; then ./autogen.sh; fi &amp;&amp; &quot;</span>
+
+<span class="n">sanity_check_paths</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;files&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;include/X11/Xlib.h&#39;</span><span class="p">,</span> <span class="s1">&#39;include/X11/Xutil.h&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;dirs&#39;</span><span class="p">:</span>  <span class="p">[</span><span class="s1">&#39;include/GL&#39;</span><span class="p">,</span> <span class="s1">&#39;include/X11&#39;</span><span class="p">,</span> <span class="s1">&#39;include/X11/extensions&#39;</span><span class="p">,</span> <span class="s1">&#39;lib/pkgconfig&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;share/pkgconfig&#39;</span><span class="p">,</span> <span class="s1">&#39;share/X11/xkb&#39;</span><span class="p">],</span>
+<span class="p">}</span>
+
+<span class="n">moduleclass</span> <span class="o">=</span> <span class="s1">&#39;vis&#39;</span>
+</code></pre></div>
+<p><a href="../">[X11]</a> <a href="../../..">[package list]</a></p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://www.youtube.com/channel/UCb31KOJ6Wqu0sRpIRi_k8Mw" target="_blank" rel="noopener" title="LUMI on YouTube" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://www.linkedin.com/company/lumi-supercomputer" target="_blank" rel="noopener" title="LUMI on LinkedIn" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://twitter.com/LUMIhpc" target="_blank" rel="noopener" title="LUMI on Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "header.autohide", "toc.follow", "content.code.annotate", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.467223ff.min.js"></script>
+      
+    
+  </body>
+</html>

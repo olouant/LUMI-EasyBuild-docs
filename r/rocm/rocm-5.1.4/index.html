@@ -1,0 +1,1435 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for the LUMI EasyBuild-provided packages">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
+    
+    
+      
+        <title>rocm/5.1.4 (rocm-5.1.4.eb) - rocm - LUMI EasyBuild-provided software</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2d9f7617.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#rocm514-rocm-514eb" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="LUMI EasyBuild-provided software" class="md-header__button md-logo" aria-label="LUMI EasyBuild-provided software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LUMI EasyBuild-provided software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              rocm/5.1.4 (rocm-5.1.4.eb) - rocm
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent=""  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#a" class="md-tabs__link">
+      a
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#b" class="md-tabs__link">
+      b
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#c" class="md-tabs__link">
+      c
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#d" class="md-tabs__link">
+      d
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#e" class="md-tabs__link">
+      e
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#f" class="md-tabs__link">
+      f
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#g" class="md-tabs__link">
+      g
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#h" class="md-tabs__link">
+      h
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#i" class="md-tabs__link">
+      i
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#j" class="md-tabs__link">
+      j
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#l" class="md-tabs__link">
+      l
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#m" class="md-tabs__link">
+      m
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#n" class="md-tabs__link">
+      n
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#o" class="md-tabs__link">
+      o
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#p" class="md-tabs__link">
+      p
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#q" class="md-tabs__link">
+      q
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#r" class="md-tabs__link">
+      r
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#s" class="md-tabs__link">
+      s
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#t" class="md-tabs__link">
+      t
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#u" class="md-tabs__link">
+      u
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#v" class="md-tabs__link">
+      v
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#w" class="md-tabs__link">
+      w
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#x" class="md-tabs__link">
+      x
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../index.html#z" class="md-tabs__link">
+      z
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="LUMI EasyBuild-provided software" class="md-nav__button md-logo" aria-label="LUMI EasyBuild-provided software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    LUMI EasyBuild-provided software
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#a" class="md-nav__link">
+        a
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#b" class="md-nav__link">
+        b
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#c" class="md-nav__link">
+        c
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#d" class="md-nav__link">
+        d
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#e" class="md-nav__link">
+        e
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#f" class="md-nav__link">
+        f
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#g" class="md-nav__link">
+        g
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#h" class="md-nav__link">
+        h
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#i" class="md-nav__link">
+        i
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#j" class="md-nav__link">
+        j
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#l" class="md-nav__link">
+        l
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#m" class="md-nav__link">
+        m
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#n" class="md-nav__link">
+        n
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#o" class="md-nav__link">
+        o
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#p" class="md-nav__link">
+        p
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#q" class="md-nav__link">
+        q
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#r" class="md-nav__link">
+        r
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#s" class="md-nav__link">
+        s
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#t" class="md-nav__link">
+        t
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#u" class="md-nav__link">
+        u
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#v" class="md-nav__link">
+        v
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#w" class="md-nav__link">
+        w
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#x" class="md-nav__link">
+        x
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html#z" class="md-nav__link">
+        z
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<p><a href="../">[rocm]</a> <a href="../../..">[package list]</a></p>
+<h1 id="rocm514-rocm-514eb">rocm/5.1.4 (rocm-5.1.4.eb)</h1>
+<p>To access module help and find out for which stacks and partitions the module is
+installed, use <code>module spider rocm/5.1.4</code>.</p>
+<p>EasyConfig:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Created for LUMI by Orian Louant</span>
+<span class="c1">#</span>
+<span class="c1"># This is not very clean but it do the job. Tried with a bundle EasyBlock without</span>
+<span class="c1"># much success: Esybuild tried to uncompress the RPMs as they were Tarballs.</span>
+
+<span class="n">easyblock</span> <span class="o">=</span> <span class="s1">&#39;Binary&#39;</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">local_components</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">(</span><span class="s1">&#39;atmi&#39;</span><span class="p">,</span> <span class="s1">&#39;5.0.1&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;9ebafcd29b5e8c380395c5d34cd4fc931c25a9eb3c44ea10fab8c3a2df04a9dc&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;comgr&#39;</span><span class="p">,</span> <span class="s1">&#39;2.4.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;496558e67b54fcb9831840b76bf2c1e5b60f2c5cc0f23939c332f8237d16e0b3&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;half&#39;</span><span class="p">,</span> <span class="s1">&#39;1.12.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;6adb899f9154ddbc5e962fa2cf3bcb9db1e61d72c0df59af56da0671c94087e6&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span>   <span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;hip-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;5.1.20532&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;4c167500942d603b9ba4d27cea67b426afb335d87d069363db7ca05c554d5b6a&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;hip-doc&#39;</span><span class="p">,</span> <span class="s1">&#39;5.1.20532&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;5d46b98320cca3317fbfbe6149157cd009455c32bf8d2dcd0c584008d506fe23&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;hip-runtime-amd&#39;</span><span class="p">,</span> <span class="s1">&#39;5.1.20532&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;6292ec5f58364e5fe8992233fabe9424a8d4c4c60a36b16a6abd69d1dd835789&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;hip-samples&#39;</span><span class="p">,</span> <span class="s1">&#39;5.1.20532&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;39fdaff4a73097bb8e5863a5e8e2fd033aba0c8cbef7f9b748d8dbaf4ec508d2&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;hsa-amd-aqlprofile&#39;</span><span class="p">,</span> <span class="s1">&#39;1.0.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;62afaa5ef0f2ab24a5f2ead0c770d8ed0844dcb839a4b535d5391280111671bc&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;hsa-rocr-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;1.5.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;b9d20b95d4b1f6f61e9b8d459a9cd6b0b81ebd70ac8a7b114f5baf2b83f57305&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;hsa-rocr&#39;</span><span class="p">,</span> <span class="s1">&#39;1.5.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;645a1d845f7eb91c219f824271fc06d55d6cb9a6f73b5ebea4412b4104a204c6&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;hsakmt-roct-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;20220128.1.7&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;d33d88d096c6e2b3e8694ae4a13600173000b305df09de64e917d4dd0a8ca2b4&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;openmp-extras&#39;</span><span class="p">,</span> <span class="s1">&#39;13.51.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;7730c74efbce7178d77979b30311676317f860d90306e8479e7fdfb4933d983b&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rdc&#39;</span><span class="p">,</span> <span class="s1">&#39;0.3.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;4853c314a7d9582bf3f92906c0ff7201fa2e1fc0feb7b72e3816412b528a2ce3&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-clang-ocl&#39;</span><span class="p">,</span> <span class="s1">&#39;0.5.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;58fb1337c45b668ce61e702b40471146661633bf9c2169dd6c88ff8553003f38&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-cmake&#39;</span><span class="p">,</span> <span class="s1">&#39;0.7.2&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;5d656a076d0585ca3d7cb3a699c93c4fadcd10386de9edf33ef7908cbb6b233b&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-core&#39;</span><span class="p">,</span> <span class="s1">&#39;5.1.4&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;347102e4ec2e4330c5a8c4000194dbc2444a405592ab093fdf55b421510aee3b&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-dbgapi&#39;</span><span class="p">,</span> <span class="s1">&#39;0.64.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;a7c25e327b722d673050dfe87b75601c63ec7d77ec2a991e0bad563d66281d20&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-debug-agent&#39;</span><span class="p">,</span> <span class="s1">&#39;2.0.3&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;3ba7b6a7e0758e2cc1907d07c0310d9389921a565920f36f83a2d889bc89fa16&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-dev&#39;</span><span class="p">,</span> <span class="s1">&#39;5.1.4&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;d981b27cdb8b30ee11806babba7876d92b86a5e8b32e44ed16ed2f0311276f79&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-developer-tools&#39;</span><span class="p">,</span> <span class="s1">&#39;5.1.4&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;fefe07b1216aae157738b18dcf27c164e74e91c08905ddbd87b1866e1ec020c5&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-device-libs&#39;</span><span class="p">,</span> <span class="s1">&#39;1.0.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;5ca72d148ab3083ad06b7c412edb33678b9a15bd26158c165139480fdcd707e2&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-dkms&#39;</span><span class="p">,</span> <span class="s1">&#39;5.1.4&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;f4591043c26969325496637518e2b808c1b7c638d6f0974cd2b33a53d53ba3fc&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;source&#39;</span> <span class="p">:</span> <span class="s1">&#39;rocm-dkms-5.1.4.50104-sles153.85.x86_64.rpm&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-gdb&#39;</span><span class="p">,</span> <span class="s1">&#39;11.2&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;872d43ae3417f01a372305daf546e4a6e77e4df404fe2f69d3f7210209449c10&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-hip-runtime-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;5.1.4&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;d167ba3d5a8efcf7f9d571475d1c8df4ce4627243f9ee64375ceeacc21897552&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-hip-runtime&#39;</span><span class="p">,</span> <span class="s1">&#39;5.1.4&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;24650d08d6e1f5044d9d188cafd7326aedf5b8ff3e81657bd151d43f886d69d4&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-hip-sdk&#39;</span><span class="p">,</span> <span class="s1">&#39;5.1.4&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;5eaf25a8f8d1b0438518c1282cb09a948f5b854aaeaa248df73a8524fbb4e6d9&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-language-runtime&#39;</span><span class="p">,</span> <span class="s1">&#39;5.1.4&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;278f7cdda6d8e7f961b0c3f0fdbc4836a537faa8381336c055b2603a8fb47376&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-llvm&#39;</span><span class="p">,</span> <span class="s1">&#39;14.0.0.22114&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;bbc5106fecab0145de12f27444f2c90a113445fd235be4680c7c7c6d481d80d8&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-ocl-icd&#39;</span><span class="p">,</span> <span class="s1">&#39;2.0.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;c63789087e9f8018a23a6863655a7ce109210ec472e7e703c18bd9106f0fd9ea&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-opencl-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;2.0.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;b9d6ecb4234c5224cb0d23928e3435d056fcf1ffd12b8d3e1826edf8bc1f3bea&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-opencl-runtime&#39;</span><span class="p">,</span> <span class="s1">&#39;5.1.4&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;229c8b3ae0998cbc709acea7f9e49a897e582f7bf65dc8cdacc468d71844b9b6&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-opencl-sdk&#39;</span><span class="p">,</span> <span class="s1">&#39;5.1.4&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;6bd082364488bce7648d64f0bfc69fc6a340aa3b4a0431262f9501f8cc727388&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-opencl&#39;</span><span class="p">,</span> <span class="s1">&#39;2.0.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;1cb5c5dfc8bb455f4568eefeaeb7a504edc83f2f888f87136692a9fbd761b06a&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-openmp-sdk&#39;</span><span class="p">,</span> <span class="s1">&#39;5.1.4&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;bec312af8276d87220aad088f26bf63af0784ad41daa6eb71f520b4e787debb9&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-smi-lib&#39;</span><span class="p">,</span> <span class="s1">&#39;5.0.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;cc320e656e42de5cbb359ac9ee625c5897148fc3ab7fb032f692364028b82981&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocm-utils&#39;</span><span class="p">,</span> <span class="s1">&#39;5.1.4&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;47cf446f525694cee579932be5a0005ce80d8ae8271370957758da754abb47c2&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocminfo&#39;</span><span class="p">,</span> <span class="s1">&#39;1.0.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;479d177fe781b3512f9c394a56041043277fb69dbd309a7768761bd480f622b9&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocprofiler-dev&#39;</span><span class="p">,</span> <span class="s1">&#39;1.0.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;f25a100a36bea9eb30a8937885aaf9ec5f2866f7a85dc81c3f436d6d8cb2636f&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;roctracer-dev&#39;</span><span class="p">,</span> <span class="s1">&#39;1.0.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;68ec39e40f45864379c4402808d08ab150bcf41287abf8180ca6ae31773158ea&#39;</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;hipblas-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;0.50.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;0657f6a91edc0911507b11215c1b0b070f0af335a6bf85769765c9ebc2926d2a&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;hipblas&#39;</span><span class="p">,</span> <span class="s1">&#39;0.50.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;f2493af3e05adf1ae0c07a95621f8126c9857cdef15fc6d74840fc4e804131a6&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;ebrootdirs&#39;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">&#39;HIPBLAS&#39;</span> <span class="p">:</span> <span class="s1">&#39;hipblas&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;hipcub-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;2.10.12&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;628649c24e44b9b8b38188fde9cbfbc40d6ed5121d376a6f4a6def518fcae255&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;ebrootdirs&#39;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">&#39;HIPCUB&#39;</span> <span class="p">:</span> <span class="s1">&#39;hipcub&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;hipfft-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;1.0.7&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;8fbabc89df0542a92ce40ee6190525d6740a6bbac4e446eb6dd1724db8b6c6a7&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;hipfft&#39;</span><span class="p">,</span> <span class="s1">&#39;1.0.7&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;f89757f4766cc3a33d93dc515595c3bc7bcea1d2c97e5a87458a26a5024c54f9&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;ebrootdirs&#39;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">&#39;HIPFFT&#39;</span> <span class="p">:</span> <span class="s1">&#39;hipfft&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;hipsolver-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;1.3.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;43f855b9ac9d6f97732d67d510f002ff1f070bd35e07328b0b9570c43cc92ce8&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;hipsolver&#39;</span><span class="p">,</span> <span class="s1">&#39;1.3.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;529c258a0e9080c8e1802fc4769355966751458ffe88727db93752d922e5e3f6&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;ebrootdirs&#39;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">&#39;HIPSOLVER&#39;</span> <span class="p">:</span> <span class="s1">&#39;hipsolver&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;hipsparse-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;2.1.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;d78be638954f423e69368f590b2896b6dbd213c65333c090b6d032cb6af71c3b&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;hipsparse&#39;</span><span class="p">,</span> <span class="s1">&#39;2.1.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;d742f5025e0cb546b1dc7618bbd2d46cba9126ac76ee484aefe42e4167bc0c86&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;ebrootdirs&#39;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">&#39;HIPSPARSE&#39;</span> <span class="p">:</span> <span class="s1">&#39;hipsparse&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocalution-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;2.0.2&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;72f9e6ab8340615c81dbf2a5122127348ed5edb7d6a1cefceef0fd51bd6c5d8a&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocalution&#39;</span><span class="p">,</span> <span class="s1">&#39;2.0.2&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;6f1f9e21f4539361e70f8849dabe5463c39aa46bbd127f8ac4b3fdb66f94e367&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;ebrootdirs&#39;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">&#39;ROCALUTION&#39;</span> <span class="p">:</span> <span class="s1">&#39;rocalution&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocblas-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;2.43.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;aed62f4b9d6a1c4034f434169086a0bc1efa7530889a168329352a96d79283c9&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocblas&#39;</span><span class="p">,</span> <span class="s1">&#39;2.43.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;5d5145cf5ee5bc2a3e364ddceadfe743f40cbfcf588baac8cedbe9a199e1e1a3&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;ebrootdirs&#39;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">&#39;ROCBLAS&#39;</span> <span class="p">:</span> <span class="s1">&#39;rocblas&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocfft-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;1.0.16&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;35371199feafd3f8dbc72f6459dfb6a9b21eeea27542b7a26497055a91c379a5&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocfft&#39;</span><span class="p">,</span> <span class="s1">&#39;1.0.16&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;8290fa5cbe554451369cfe5b1537894a8c31d2fd839a8c4348e0b19c3e6866b5&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;ebrootdirs&#39;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">&#39;ROCFFT&#39;</span> <span class="p">:</span> <span class="s1">&#39;rocfft&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocrand-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;2.10.9&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;f702cd98bf2ac38056195f6edbf5789e7f1a6bf8010cccb5ba9c8b9d1ffa9630&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocrand&#39;</span><span class="p">,</span> <span class="s1">&#39;2.10.9&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;840ad6ce86931993ed6718b7abc100c1e2b0b38cbda366b3ab445f9da3853a18&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;ebrootdirs&#39;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">&#39;ROCRAND&#39;</span> <span class="p">:</span> <span class="s1">&#39;rocrand&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocsolver-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;3.17.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;e1869b7642954e7b07ce4ca25df3766fdd38babdfb7dae0d7917b91713c184e7&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocsolver&#39;</span><span class="p">,</span> <span class="s1">&#39;3.17.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;edbbd767831f535cb9dd4bc3088051338155e7278582d542264080e282a65bce&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;ebrootdirs&#39;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">&#39;ROCSOLVER&#39;</span> <span class="p">:</span> <span class="s1">&#39;rocsolver&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocsparse-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;2.1.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;ade5c826c04a39dd073a7355e69508d6d1eeb6d0ade5899a2ce61dcdaf9a119d&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocsparse&#39;</span><span class="p">,</span> <span class="s1">&#39;2.1.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;79355ffdf4a0d0db4991ce76907dd0e971d7ecfa4701e890f288a9096735c6f0&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;ebrootdirs&#39;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">&#39;ROCSPARSE&#39;</span> <span class="p">:</span> <span class="s1">&#39;rocsparse&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocprim-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;2.10.9&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;2f195c5cd4b4ba4eed3e7c8357d5524a68ed3a9c3c5342773d54b18154747663&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;ebrootdirs&#39;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">&#39;ROCPRIM&#39;</span> <span class="p">:</span> <span class="s1">&#39;rocprim&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rocthrust-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;2.10.9&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;f7bbed618d7c1f8af47ab4ad0a7ddcb32db88509760fa678b93eae7d8e210377&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;ebrootdirs&#39;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">&#39;ROCTHRUST&#39;</span> <span class="p">:</span> <span class="s1">&#39;rocthrust&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;rccl&#39;</span><span class="p">,</span> <span class="s1">&#39;2.11.4&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;abe01a0462db0558f23e4f2148e8a0664eade03f06b6bebc9bc7f2770beab74d&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;ebrootdirs&#39;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">&#39;RCCL&#39;</span> <span class="p">:</span> <span class="s1">&#39;rccl&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}),</span>  
+  <span class="p">(</span><span class="s1">&#39;rccl-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;2.11.4&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span> <span class="p">:</span> <span class="s1">&#39;826ba40d74184958fa8a0fbdda4e74422d4f75f0237bb568ec1090c1143b9c3b&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;migraphx&#39;</span><span class="p">,</span> <span class="s1">&#39;2.1.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span><span class="p">:</span> <span class="s1">&#39;ddca535b70ae9e5fecfc5e0dd45f47cb06e2588f48ee8d7f4868054df8931d43&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;ebrootdirs&#39;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">&#39;MIGRAPHX&#39;</span> <span class="p">:</span> <span class="s1">&#39;</span><span class="si">%(installdir)s</span><span class="s1">&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;miopen-hip-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;2.16.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span><span class="p">:</span> <span class="s1">&#39;2f73d195394ad0044251c78097c6587acef90af9baca6eeec17fa8eb74d9068d&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;miopen-hip&#39;</span><span class="p">,</span> <span class="s1">&#39;2.16.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span><span class="p">:</span> <span class="s1">&#39;042b1265d5275a9e75329b717e4c732a1a2ae1e69a79aed51afecddba331203d&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;ebrootdirs&#39;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">&#39;MIOPEN&#39;</span> <span class="p">:</span> <span class="s1">&#39;miopen&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;miopengemm-devel&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.6&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span><span class="p">:</span> <span class="s1">&#39;19aa2f63fa9326c7a430394781900725844c5c30faf4fa1cb06846b95bb449d7&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;miopengemm&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.6&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span><span class="p">:</span> <span class="s1">&#39;4d6be7f01fa83a8baf339c82748a37ef6ea44cce67bc4c6badd1de8c6f2f2a7b&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;ebrootdirs&#39;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">&#39;MIOPENGEMM&#39;</span> <span class="p">:</span> <span class="s1">&#39;miopengemm&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;mivisionx&#39;</span><span class="p">,</span> <span class="s1">&#39;2.1.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span><span class="p">:</span> <span class="s1">&#39;322acf3359e8ba2c5edccf5366c34de0a1be3e11b1a1294ad27b226411ac7bfd&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;ebrootdirs&#39;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">&#39;MIVISIONX&#39;</span> <span class="p">:</span> <span class="s1">&#39;mivisionx&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;miopenkernels-gfx1030-36kdb&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="s1">&#39;checksum&#39;</span><span class="p">:</span> <span class="s1">&#39;42b6004c4693b30a2a09acf65091abd45c8ab6c3aecf9beab97810e3d921ee7e&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;miopenkernels-gfx900-56kdb&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span><span class="p">:</span> <span class="s1">&#39;f4ddd93a3dd4ed475bc2e1942af145b55efa28d66489308a3e84e605549bf603&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;miopenkernels-gfx900-64kdb&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span><span class="p">:</span> <span class="s1">&#39;2f633f07fa8b80df4ccf45014583cab087f6888f15e39546123588fc516b46f4&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;miopenkernels-gfx906-60kdb&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span><span class="p">:</span> <span class="s1">&#39;d5a393a685f51e772eaffeb00938b7a08f38c1047d55d98626ff457ed53bbd7a&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;miopenkernels-gfx906-64kdb&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span><span class="p">:</span> <span class="s1">&#39;2c56d712cd9b63c65d8fc4ef6278ae11fcb347c9689cc48e91a870d85d6e3ab0&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;miopenkernels-gfx908-120kdb&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span><span class="p">:</span> <span class="s1">&#39;f4e0ef84345c9ff9f81a1ba76afd35cdd7c39b22b78323e77763e9359e1530ff&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;miopenkernels-gfx90a-104&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span><span class="p">:</span> <span class="s1">&#39;506ca21c884ee3c48e90a6e2b40d9157ca7256bab45cd887e608b6f083ea8890&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+  <span class="p">(</span><span class="s1">&#39;miopenkernels-gfx90a-110&#39;</span><span class="p">,</span> <span class="s1">&#39;1.1.0&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">&#39;checksum&#39;</span><span class="p">:</span> <span class="s1">&#39;79146c9bebe7e6ab3990c36fa5653a35c87d267255a42b19667dca28d2840759&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nosles&#39;</span><span class="p">:</span> <span class="kc">True</span>
+  <span class="p">}),</span>
+<span class="p">]</span>
+
+<span class="n">local_rocm_pkgconfig</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">rocm_prefix=</span><span class="si">%(installdir)s</span><span class="s2"></span>
+<span class="s2">includedir=$</span><span class="si">{rocm_prefix}</span><span class="s2">/include</span>
+<span class="s2">lib64dir=$</span><span class="si">{rocm_prefix}</span><span class="s2">/lib64</span>
+<span class="s2">libdir=$</span><span class="si">{rocm_prefix}</span><span class="s2">/lib</span>
+<span class="s2">profiler_includedir=$</span><span class="si">{rocm_prefix}</span><span class="s2">/rocprofiler/include</span>
+<span class="s2">profiler_libdir=$</span><span class="si">{rocm_prefix}</span><span class="s2">/rocprofiler/lib</span>
+<span class="s2">profiler_tooldir=$</span><span class="si">{rocm_prefix}</span><span class="s2">/rocprofiler/tool</span>
+<span class="s2">profiler_bindir=$</span><span class="si">{rocm_prefix}</span><span class="s2">/rocprofiles/bin</span>
+<span class="s2">tracer_includedir=$</span><span class="si">{rocm_prefix}</span><span class="s2">/roctracer/include</span>
+<span class="s2">tracer_libdir=$</span><span class="si">{rocm_prefix}</span><span class="s2">/roctracer/lib</span>
+<span class="s2">tracer_tooldir=$</span><span class="si">{rocm_prefix}</span><span class="s2">/roctracer/tool</span>
+<span class="s2">hip_includedir=$</span><span class="si">{rocm_prefix}</span><span class="s2">/hip/include</span>
+<span class="s2">hip_libdir=$</span><span class="si">{rocm_prefix}</span><span class="s2">/hip/lib</span>
+<span class="s2">hip_bindir=$</span><span class="si">{rocm_prefix}</span><span class="s2">/hip/bin</span>
+
+<span class="s2">Cflags: -I$</span><span class="si">{includedir}</span><span class="s2"> -I$</span><span class="si">{profiler_includedir}</span><span class="s2"> -I$</span><span class="si">{tracer_includedir}</span><span class="s2"> -I$</span><span class="si">{hip_includedir}</span><span class="s2"> -D_HIP_PLATFORM_HCC_</span>
+<span class="s2">Description: ROCm Toolkit</span>
+<span class="s2">Libs: -L$</span><span class="si">{lib64dir}</span><span class="s2"> -L$</span><span class="si">{libdir}</span><span class="s2"> -L$</span><span class="si">{profiler_libdir}</span><span class="s2"> -L$</span><span class="si">{profiler_tooldir}</span><span class="s2"> -L$</span><span class="si">{tracer_libdir}</span><span class="s2"> -L$</span><span class="si">{tracer_tooldir}</span><span class="s2"> -L$</span><span class="si">{hip_libdir}</span><span class="s2"> -lamdhip64</span>
+<span class="s2">Name: </span><span class="si">%(name)s</span><span class="s2">-</span><span class="si">%(version)s</span><span class="s2"></span>
+<span class="s2">Version: </span><span class="si">%(version)s</span><span class="s2"></span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;rocm&#39;</span>
+<span class="n">version</span> <span class="o">=</span> <span class="s1">&#39;5.1.4&#39;</span>
+
+<span class="n">homepage</span> <span class="o">=</span> <span class="s1">&#39;https://rocmdocs.amd.com/&#39;</span>
+
+<span class="n">whatis</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;Description: AMD ROCm is the first open-source software development platform for &quot;</span>
+    <span class="s2">&quot;HPC/Hyperscale-class GPU computing&quot;</span>
+<span class="p">]</span>
+
+<span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">AMD ROCm is the first open-source software development platform for</span>
+<span class="s2">HPC/Hyperscale-class GPU computing. AMD ROCm brings the UNIX philosophy of</span>
+<span class="s2">choice, minimalism and modular software development to GPU computing.</span>
+
+<span class="s2">ROCm provides the tools required for the development of code using HIP, OpenCL</span>
+<span class="s2">and OpenMP programming models including tools for profiling and debugging.</span>
+
+<span class="s2">This is an experimental module provided for the convenience of the users of the</span>
+<span class="s2">Early Access Platform so that they can compile their code from the login node.</span>
+<span class="s2">Problems can and will occur and we can only offer limited support. The module</span>
+<span class="s2">should be used with the compilers from the Cray Programming Environment 21.12.</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">docurls</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s1">&#39;https://rocmdocs.amd.com/en/latest/&#39;</span>
+<span class="p">]</span>
+
+<span class="n">toolchain</span> <span class="o">=</span> <span class="n">SYSTEM</span>
+
+<span class="n">source_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;https://repo.radeon.com/rocm/zyp/</span><span class="si">%(version)s</span><span class="s1">/main/&#39;</span><span class="p">]</span>
+
+<span class="n">sources</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">checksums</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">local_component</span> <span class="ow">in</span> <span class="n">local_components</span><span class="p">:</span>
+  <span class="n">local_name</span>    <span class="o">=</span> <span class="n">local_component</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+  <span class="n">local_version</span> <span class="o">=</span> <span class="n">local_component</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+  <span class="n">local_specs</span>   <span class="o">=</span> <span class="n">local_component</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+
+  <span class="k">if</span> <span class="s1">&#39;source&#39;</span> <span class="ow">in</span> <span class="n">local_specs</span><span class="p">:</span>
+    <span class="n">sources</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">local_specs</span><span class="p">[</span><span class="s1">&#39;source&#39;</span><span class="p">])</span>
+  <span class="k">elif</span> <span class="s1">&#39;nosles&#39;</span> <span class="ow">in</span> <span class="n">local_specs</span> <span class="ow">and</span> <span class="n">local_specs</span><span class="p">[</span><span class="s1">&#39;nosles&#39;</span><span class="p">]:</span>
+    <span class="n">sources</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s%s</span><span class="s1">-</span><span class="si">%s</span><span class="s1">.50104-85.x86_64.rpm&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">local_name</span><span class="p">,</span> <span class="n">version</span><span class="p">,</span> <span class="n">local_version</span><span class="p">))</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="n">sources</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s%s</span><span class="s1">-</span><span class="si">%s</span><span class="s1">.50104-sles153.85.x86_64.rpm&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">local_name</span><span class="p">,</span> <span class="n">version</span><span class="p">,</span> <span class="n">local_version</span><span class="p">))</span>
+
+  <span class="k">if</span> <span class="s1">&#39;checksum&#39;</span> <span class="ow">in</span> <span class="n">local_specs</span><span class="p">:</span>
+    <span class="n">checksums</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">local_specs</span><span class="p">[</span><span class="s1">&#39;checksum&#39;</span><span class="p">])</span>
+
+<span class="n">install_cmd</span>  <span class="o">=</span> <span class="s1">&#39;for rpm in *.rpm; do rpm2cpio $rpm | cpio -idmv; done &amp;&amp;&#39;</span>
+<span class="n">install_cmd</span> <span class="o">+=</span> <span class="s1">&#39;cd opt/rocm-</span><span class="si">%(version)s</span><span class="s1">/ &amp;&amp;&#39;</span>
+<span class="n">install_cmd</span> <span class="o">+=</span> <span class="s1">&#39;cp -ar . </span><span class="si">%(installdir)s</span><span class="s1">/&#39;</span>
+
+<span class="n">postinstallcmds</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s1">&#39;cd </span><span class="si">%(installdir)s</span><span class="s1">/lib       &amp;&amp; for i in ../hip/lib/*.so*;      do ln -s $i; done&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;cd </span><span class="si">%(installdir)s</span><span class="s1">/lib/cmake &amp;&amp; for i in ../../hip/lib/cmake/*; do ln -s $i; done&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;cd </span><span class="si">%(installdir)s</span><span class="s1">/bin       &amp;&amp; for i in ../hip/bin/*;          do ln -s $i; done&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;cd </span><span class="si">%(installdir)s</span><span class="s1">/bin       &amp;&amp; for i in ../llvm/bin/amd*;      do ln -s $i; done&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;cd </span><span class="si">%(installdir)s</span><span class="s1">/include   &amp;&amp; ln -s ../hip/include/hip&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;sed -i s+/opt/rocm-</span><span class="si">%(version)s</span><span class="s1">+</span><span class="si">%(installdir)s</span><span class="s1">+ </span><span class="si">%(installdir)s</span><span class="s1">/bin/clang-ocl&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;find </span><span class="si">%(installdir)s</span><span class="s1"> -type f -name &quot;*.cmake&quot; -exec sed -i s+/opt/rocm-</span><span class="si">%(version)s</span><span class="s1">+</span><span class="si">%(installdir)s</span><span class="s1">+ </span><span class="si">{}</span><span class="s1"> +&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;find </span><span class="si">%(installdir)s</span><span class="s1"> -type f -name &quot;*.cmake&quot; -exec sed -i s+/opt/rocm+</span><span class="si">%(installdir)s</span><span class="s1">+ </span><span class="si">{}</span><span class="s1"> +&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;find </span><span class="si">%(installdir)s</span><span class="s1"> -type f -name &quot;*.cmake&quot; -exec sed -i s+/usr/lib64/libtinfo.so+/lib64/libtinfo.so.6+ </span><span class="si">{}</span><span class="s1"> +&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;mkdir -p </span><span class="si">%(installdir)s</span><span class="s1">/lib64/pkgconfig&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;cat &gt;</span><span class="si">%(installdir)s</span><span class="s1">/lib64/pkgconfig/rocm-</span><span class="si">%(version_major_minor)s</span><span class="s1">.pc &lt;&lt;EOF</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">local_rocm_pkgconfig</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;$&#39;</span><span class="p">,</span> <span class="s1">&#39;\$&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">EOF</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;ln -s </span><span class="si">%(installdir)s</span><span class="s1">/lib64/pkgconfig/rocm-</span><span class="si">%(version_major_minor)s</span><span class="s1">.pc </span><span class="si">%(installdir)s</span><span class="s1">/lib64/pkgconfig/rocm.pc&#39;</span>
+<span class="p">]</span>
+
+<span class="n">local_bin_files</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;hipcc&#39;</span><span class="p">,</span> <span class="s1">&#39;hipconfig&#39;</span><span class="p">,</span> <span class="s1">&#39;amdclang&#39;</span><span class="p">,</span> <span class="s1">&#39;amdclang++&#39;</span><span class="p">,</span> <span class="s1">&#39;amdflang&#39;</span><span class="p">]</span>
+<span class="n">local_lib_files</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;libamdhip64.so.5&#39;</span><span class="p">,</span> <span class="s1">&#39;libhsa-runtime64.so.1&#39;</span><span class="p">]</span>
+<span class="n">local_inc_dirs</span>  <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;hsa&#39;</span><span class="p">,</span> <span class="s1">&#39;roctracer&#39;</span><span class="p">,</span> <span class="s1">&#39;rocprofiler&#39;</span><span class="p">,</span> <span class="s1">&#39;hip&#39;</span><span class="p">]</span>
+
+<span class="n">local_library_paths</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s1">&#39;lib64&#39;</span><span class="p">,</span> <span class="s1">&#39;lib&#39;</span><span class="p">,</span> <span class="s1">&#39;rocprofiler/lib&#39;</span><span class="p">,</span> <span class="s1">&#39;rocprofiler/tool&#39;</span><span class="p">,</span> <span class="s1">&#39;roctracer/lib&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;roctracer/tool&#39;</span><span class="p">,</span> <span class="s1">&#39;hip/lib&#39;</span>
+<span class="p">]</span>
+
+<span class="n">local_include_paths</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s1">&#39;include&#39;</span><span class="p">,</span> <span class="s1">&#39;rocprofiler/include&#39;</span><span class="p">,</span> <span class="s1">&#39;roctracer/include&#39;</span><span class="p">,</span> <span class="s1">&#39;hip/include&#39;</span>
+<span class="p">]</span>
+
+<span class="n">sanity_check_paths</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;files&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;bin/</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">local_bin_files</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;lib/</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">local_lib_files</span><span class="p">],</span>
+    <span class="s1">&#39;dirs&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;include/</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">local_inc_dirs</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;hip&#39;</span><span class="p">,</span> <span class="s1">&#39;hsa&#39;</span><span class="p">,</span> <span class="s1">&#39;llvm&#39;</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">modextrapaths</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s1">&#39;LD_LIBRARY_PATH&#39;</span>          <span class="p">:</span> <span class="n">local_library_paths</span><span class="p">[</span><span class="mi">2</span><span class="p">:],</span>
+  <span class="s1">&#39;CRAY_LD_LIBRARY_PATH&#39;</span>     <span class="p">:</span> <span class="n">local_library_paths</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">modextravars</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s1">&#39;ROCM_PATH&#39;</span>                <span class="p">:</span> <span class="s1">&#39;</span><span class="si">%(installdir)s</span><span class="s1">&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;HIP_PATH&#39;</span>                 <span class="p">:</span> <span class="s1">&#39;</span><span class="si">%(installdir)s</span><span class="s1">/hip&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;HIP_LIB_PATH&#39;</span>             <span class="p">:</span> <span class="s1">&#39;</span><span class="si">%(installdir)s</span><span class="s1">/hip/lib&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;HSA_PATH&#39;</span>                 <span class="p">:</span> <span class="s1">&#39;</span><span class="si">%(installdir)s</span><span class="s1">/hsa&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;CRAY_ROCM_VERSION&#39;</span>        <span class="p">:</span> <span class="s1">&#39;</span><span class="si">%(version)s</span><span class="s1">&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;CRAY_ROCM_DIR&#39;</span>            <span class="p">:</span> <span class="s1">&#39;</span><span class="si">%(installdir)s</span><span class="s1">&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;CRAY_ROCM_PREFIX&#39;</span>         <span class="p">:</span> <span class="s1">&#39;</span><span class="si">%(installdir)s</span><span class="s1">&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;XTPE_LINK_TYPE&#39;</span>           <span class="p">:</span> <span class="s1">&#39;dynamic&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;CRAYPE_LINK_TYPE&#39;</span>         <span class="p">:</span> <span class="s1">&#39;dynamic&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;CRAY_ROCM_POST_LINK_OPTS&#39;</span> <span class="p">:</span> <span class="s1">&#39;-L</span><span class="si">%(installdir)s</span><span class="s1">/&#39;</span> <span class="o">+</span> <span class="s1">&#39; -L</span><span class="si">%(installdir)s</span><span class="s1">/&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">local_library_paths</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; -lamdhip64&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;CRAY_ROCM_INCLUDE_OPTS&#39;</span>   <span class="p">:</span> <span class="s1">&#39;-I</span><span class="si">%(installdir)s</span><span class="s1">/&#39;</span> <span class="o">+</span> <span class="s1">&#39; -I</span><span class="si">%(installdir)s</span><span class="s1">/&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">local_include_paths</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; -D_HIP_PLATFORM_HCC__&#39;</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">modluafooter</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">append_path(&quot;PE_PRODUCT_LIST&quot;, &quot;CRAY_ROCM&quot;)</span>
+<span class="s2">prepend_path(&quot;PE_PKGCONFIG_LIBS&quot;, &quot;rocm-</span><span class="si">%(version_major_minor)s</span><span class="s2">&quot;)</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="k">for</span> <span class="n">local_component</span> <span class="ow">in</span> <span class="n">local_components</span><span class="p">:</span>
+  <span class="k">if</span> <span class="s1">&#39;ebrootdirs&#39;</span> <span class="ow">in</span> <span class="n">local_component</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span>
+    <span class="k">for</span> <span class="n">local_root</span><span class="p">,</span> <span class="n">local_dir</span> <span class="ow">in</span> <span class="n">local_component</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="s1">&#39;ebrootdirs&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+      <span class="n">modextravars</span><span class="p">[</span><span class="s1">&#39;EBROOT</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">local_root</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%(installdir)s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">local_dir</span><span class="p">))</span>
+
+<span class="n">moduleclass</span> <span class="o">=</span> <span class="s1">&#39;devel&#39;</span>
+</code></pre></div>
+<p><a href="../">[rocm]</a> <a href="../../..">[package list]</a></p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://www.youtube.com/channel/UCb31KOJ6Wqu0sRpIRi_k8Mw" target="_blank" rel="noopener" title="LUMI on YouTube" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://www.linkedin.com/company/lumi-supercomputer" target="_blank" rel="noopener" title="LUMI on LinkedIn" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://twitter.com/LUMIhpc" target="_blank" rel="noopener" title="LUMI on Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "header.autohide", "toc.follow", "content.code.annotate", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.467223ff.min.js"></script>
+      
+    
+  </body>
+</html>
