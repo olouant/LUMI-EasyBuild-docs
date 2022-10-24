@@ -1,11 +1,39 @@
-/* Make the maximum width of the content wider to display EaxsyConfig files 
+/* Make the maximum width of the content wider to display EasyConfig files 
    without scrolling. */
 .md-grid {
     max-width: 2880px; 
 }
 /* Add some padding around the main box, looks nicer when the navigation and
    table of content are disabled for a page. */
-.md-main {
-    padding-left: 5%;
-    padding-right: 5%;
+:root {
+    --lumi-software-padding: 8%
 }
+/* .md-grid {
+    padding-left:  var(--lumi-software-padding);
+    padding-right: var(--lumi-software-padding);
+} */
+.md-main {
+    padding-left:  var(--lumi-software-padding);
+    padding-right: var(--lumi-software-padding);
+}
+.md-header {
+    padding-left:  var(--lumi-software-padding);
+    padding-right: var(--lumi-software-padding);
+}
+.md-footer-nav {
+    padding-left:  var(--lumi-software-padding);
+    padding-right: var(--lumi-software-padding);
+}
+.md-footer-meta {
+    padding-left:  var(--lumi-software-padding);
+    padding-right: var(--lumi-software-padding);
+}
+/* Replace the Table of Contents title. */
+.md-nav__title {
+    visibility: hidden;
+  }
+.md-nav__title:after {
+    visibility: visible;
+    content: 'Quick navigation';
+    display: block;
+  }
