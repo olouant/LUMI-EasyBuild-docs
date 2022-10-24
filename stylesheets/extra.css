@@ -37,3 +37,34 @@
     content: 'Quick navigation';
     display: block;
   }
+/*
+  Blocks indicating if software is pre-installed or user-installable.
+*/
+.lumi-software-button-preinstalled {
+    margin: 3px;
+    /* border: 1px solid black; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgb(18, 77, 2);
+    color: white;
+    font-weight: 700;
+}
+.lumi-software-button-preinstalled:after {
+    content: 'pre-installed';
+}
+.lumi-software-button-userinstallable {
+    margin: 3px;
+    /* border: 1px solid black; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: hsla(207, 100%, 28%, 1);
+    color: white;
+    font-weight: 700;
+}
+.lumi-software-button-userinstallable:after {
+    content: 'user-installable';
+}
