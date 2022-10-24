@@ -881,6 +881,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#user-documentation" class="md-nav__link">
+    User documentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#pre-installed-modules-and-easyconfigs" class="md-nav__link">
     Pre-installed modules (and EasyConfigs)
   </a>
@@ -904,18 +911,28 @@
 <p><a href="../..">[package list]</a></p>
 <h1 id="cpeamd">cpeAMD</h1>
 <p>[pre-installed]</p>
+<h2 id="user-documentation">User documentation</h2>
+<p>The <code>cpeAMD</code> modules are the interface between EasyBuild and the
+HPE Cray Programming environment <code>amd</code> compiler module and other libraries.
+These modules replace the HPE Cray <code>PrgEnv-amd</code> module and load the precise
+versions required by the LUMI software stack with the same version number
+as the <code>cpeAMD</code> module.</p>
+<p>When doing development on top of libraries already installed with EasyBuild
+in the LUMI stack, users should use the <code>cpeAMD</code> module rather than the
+<code>PrgEnv-amd</code> module and the latter will be removed from the environment
+anyway as soon as the <code>cpeAMD</code> module is loaded, e.g., as a dependency of
+a library build with EasyBuild in the <code>cpeAMD</code> toolchain.</p>
+<p>Note that the <code>cpeAMD</code> toolchain is for GPU programming only. For CPU programming
+the AMD compilers are provided by the <code>cpeAOCC</code> module as the CPU and GPU compilers
+are currently distinct products in the AMD ecosystem.</p>
+<p>Contrary to the <code>cpeCray</code> and <code>cpeGNU</code> environments, the <code>rocm</code> module should not
+be loaded to do GPU programming. Its functionality is included in the <code>amd</code> module.</p>
 <h2 id="pre-installed-modules-and-easyconfigs">Pre-installed modules (and EasyConfigs)</h2>
 <p>To access module help and find out for which stacks and partitions the module is
 installed, use <code>module spider cpeAMD/&lt;version&gt;</code>.</p>
 <p>EasyConfig:</p>
 <ul>
-<li><a href="cpeAMD-21.05/">cpeAMD/21.05 (EasyConfig: cpeAMD-21.05.eb)</a></li>
-<li><a href="cpeAMD-21.06/">cpeAMD/21.06 (EasyConfig: cpeAMD-21.06.eb)</a></li>
-<li><a href="cpeAMD-21.G.02/">cpeAMD/21.G.02 (EasyConfig: cpeAMD-21.G.02.eb)</a></li>
-<li><a href="cpeAMD-21.G.04/">cpeAMD/21.G.04 (EasyConfig: cpeAMD-21.G.04.eb)</a></li>
-<li><a href="cpeAMD-21.G.09/">cpeAMD/21.G.09 (EasyConfig: cpeAMD-21.G.09.eb)</a></li>
 <li><a href="cpeAMD-22.08/">cpeAMD/22.08 (EasyConfig: cpeAMD-22.08.eb)</a></li>
-<li><a href="cpeAMD-22.09/">cpeAMD/22.09 (EasyConfig: cpeAMD-22.09.eb)</a></li>
 </ul>
 
               

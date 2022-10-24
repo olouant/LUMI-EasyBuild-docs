@@ -881,6 +881,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#user-documentation" class="md-nav__link">
+    User documentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#pre-installed-modules-and-easyconfigs" class="md-nav__link">
     Pre-installed modules (and EasyConfigs)
   </a>
@@ -904,16 +911,27 @@
 <p><a href="../..">[package list]</a></p>
 <h1 id="cpeaocc">cpeAOCC</h1>
 <p>[pre-installed]</p>
+<h2 id="user-documentation">User documentation</h2>
+<p>The <code>ccpeAOCC</code> modules are the interface between EasyBuild and the
+HPE Cray Programming environment <code>amd</code> compiler module and other libraries.
+These modules replace the HPE Cray <code>PrgEnv-aocc</code> module and load the precise
+versions required by the LUMI software stack with the same version number
+as the <code>ccpeAOCC</code> module.</p>
+<p>When doing development on top of libraries already installed with EasyBuild
+in the LUMI stack, users should use the <code>ccpeAOCC</code> module rather than the
+<code>PrgEnv-aocc</code> module and the latter will be removed from the environment
+anyway as soon as the <code>ccpeAOCC</code> module is loaded, e.g., as a dependency of
+a library build with EasyBuild in the <code>ccpeAOCC</code> toolchain.</p>
+<p>Note that the <code>ccpeAOCC</code> toolchain is for CPU programming only. For GPU programming
+the AMD compilers are provided by the <code>cpeAMD</code> module as the CPU and GPU compilers
+are currently distinct products in the AMD ecosystem.</p>
 <h2 id="pre-installed-modules-and-easyconfigs">Pre-installed modules (and EasyConfigs)</h2>
 <p>To access module help and find out for which stacks and partitions the module is
 installed, use <code>module spider cpeAOCC/&lt;version&gt;</code>.</p>
 <p>EasyConfig:</p>
 <ul>
 <li><a href="cpeAOCC-21.12/">cpeAOCC/21.12 (EasyConfig: cpeAOCC-21.12.eb)</a></li>
-<li><a href="cpeAOCC-22.05/">cpeAOCC/22.05 (EasyConfig: cpeAOCC-22.05.eb)</a></li>
-<li><a href="cpeAOCC-22.06/">cpeAOCC/22.06 (EasyConfig: cpeAOCC-22.06.eb)</a></li>
 <li><a href="cpeAOCC-22.08/">cpeAOCC/22.08 (EasyConfig: cpeAOCC-22.08.eb)</a></li>
-<li><a href="cpeAOCC-22.09/">cpeAOCC/22.09 (EasyConfig: cpeAOCC-22.09.eb)</a></li>
 </ul>
 
               
